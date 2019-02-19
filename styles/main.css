@@ -1,0 +1,27 @@
+/*
+*       FONTS
+ */
+@font-face {
+  font-family: 'sf-pro';
+  src: url("../fonts/SFPro/SF-Pro-Text-Regular.otf") format("truetype"); }
+/*
+*     BASE CSS
+ */
+body {
+  background-color: #000;
+  margin: 0;
+  padding: 0; }
+
+p {
+  font-family: 'sf-pro';
+  color: #fff; }
+
+header {
+  height: 48px;
+  display: block;
+  position: fixed;
+  width: 100vw;
+  z-index: 2;
+  background-image: linear-gradient(to left, #777dff 0px, #f154ff 200px, #f0357c 400px), linear-gradient(to right, #777dff 0px, #497ce2 200px, #37bdde 400px); }
+
+/*# sourceMappingURL=main.css.map */

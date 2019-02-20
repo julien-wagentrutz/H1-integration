@@ -3,7 +3,7 @@
  */
 @font-face {
   font-family: 'sf-pro';
-  src: url("../fonts/SFPro/SF-Pro-Text-Regular.otf") format("truetype"); }
+  src: url("../fonts/SFPro/SF-Pro-Text-light.otf") format("truetype"); }
 /*
 *     BASE CSS
  */
@@ -12,9 +12,12 @@ body {
   margin: 0;
   padding: 0; }
 
-p {
+p, a, h2 {
   font-family: 'sf-pro';
   color: #fff; }
+
+h2 {
+  font-size: 2em; }
 
 header {
   height: 48px;

@@ -1,0 +1,333 @@
+#pres1 {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  #pres1 div {
+    width: 800px;
+    text-align: center; }
+    #pres1 div p {
+      text-align: left;
+      font-size: 2.5vw;
+      font-weight: 700;
+      line-height: 1.2em; }
+    #pres1 div .line {
+      margin: 0 auto;
+      font-size: 180%;
+      text-align: center;
+      white-space: nowrap;
+      overflow: hidden;
+      transform: translateY(-50%);
+      color: transparent;
+      background-size: 51% 100%;
+      background-position: top left, top right;
+      background-repeat: no-repeat;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      font-size: 3.5vw;
+      font-family: 'sf-pro';
+      line-height: 1.48164;
+      font-weight: 700;
+      background-image: linear-gradient(to left, #777dff 0px, #f154ff 200px, #f0357c 400px), linear-gradient(to right, #777dff 0px, #497ce2 200px, #37bdde 400px); }
+    #pres1 div .anim-typewriter {
+      animation: typewriter 1500ms steps(80) 0s 1 normal both; }
+    #pres1 div #presVideo {
+      padding-top: 40px;
+      height: calc(100vh - 70px); }
+
+@keyframes typewriter {
+  from {
+    height: 0; }
+  to {
+    height: 60px; } }
+@keyframes flashSiri {
+  0% {
+    opacity: 0.3; }
+  50% {
+    opacity: 1; }
+  100% {
+    opacity: 0.3; } }
+#pres2 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10%; }
+  #pres2 div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    #pres2 div .img-siri {
+      position: relative;
+      background-image: url("../media/homepod_top_medium_2x copie.jpg");
+      margin-top: 50px;
+      height: 70vh;
+      background-size: 60vh;
+      width: 50vw;
+      min-width: 375px;
+      background-position: center;
+      background-repeat: no-repeat; }
+      #pres2 div .img-siri .img-siri-active {
+        position: absolute;
+        background-image: url(../media/siri_fallback_large.png);
+        width: 100%;
+        height: 100%;
+        background-position: center;
+        background-repeat: no-repeat;
+        animation: flashSiri 3500ms steps(100) infinite; }
+    #pres2 div .text-siri {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 70vh;
+      width: 47vw;
+      margin-top: 50px;
+      position: relative;
+      min-width: 375px; }
+      #pres2 div .text-siri a {
+        color: #fff;
+        bottom: 50px;
+        font-family: 'sf-pro';
+        border: 2px solid #fff;
+        border-radius: 46px;
+        padding: 20px;
+        text-decoration: none;
+        transition: background-color 1s; }
+      #pres2 div .text-siri a:hover {
+        background-color: #fff;
+        color: #000;
+        font-weight: 700; }
+      #pres2 div .text-siri .text-siri-content {
+        position: relative;
+        max-width: 100%;
+        width: 100%;
+        height: 100%;
+        margin: 0;
+        display: flex;
+        overflow: hidden;
+        justify-content: center;
+        align-items: center; }
+        #pres2 div .text-siri .text-siri-content li {
+          transition: opacity 1s;
+          position: absolute;
+          text-align: center;
+          opacity: 0; }
+          #pres2 div .text-siri .text-siri-content li p {
+            margin: 0;
+            color: transparent;
+            background-size: 51% 100%;
+            background-position: top left, top right;
+            background-repeat: no-repeat;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            padding-bottom: 6px;
+            font-size: 30px;
+            font-family: 'sf-pro';
+            line-height: 1.48164;
+            font-weight: 700;
+            background-image: linear-gradient(to left, #777dff 0px, #f154ff 200px, #f0357c 400px), linear-gradient(to right, #777dff 0px, #497ce2 200px, #37bdde 400px); }
+      #pres2 div .text-siri .text-siri-point {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        bottom: 20%; }
+      #pres2 div .text-siri .point {
+        height: 15px;
+        width: 15px;
+        border-radius: 50%;
+        margin-right: 35px;
+        background-color: #f0357c; }
+      #pres2 div .text-siri ul {
+        padding: 0; }
+        #pres2 div .text-siri ul li {
+          width: 100%;
+          margin: 0 auto; }
+
+#pres3 {
+  height: 100vh; }
+
+#pres4 {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 10%;
+  margin-bottom: 5%; }
+  #pres4 div {
+    display: flex;
+    flex-direction: column;
+    align-items: center; }
+    #pres4 div #demoVideo {
+      width: 80vw;
+      border-radius: 20px; }
+
+#pres5 {
+  background-color: #fff; }
+  #pres5 .active {
+    opacity: 0.9 !important; }
+  #pres5 .container-HomePod {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; }
+    #pres5 .container-HomePod .text-techHomePod {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      width: 50%;
+      min-width: 300px; }
+      #pres5 .container-HomePod .text-techHomePod div {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 60%;
+        text-align: center;
+        padding: 25px;
+        opacity: 0;
+        transition: opacity 1s;
+        background: #000;
+        border-radius: 20px; }
+        #pres5 .container-HomePod .text-techHomePod div p {
+          line-height: 22px; }
+    #pres5 .container-HomePod .view-techHomePod {
+      height: 100vh;
+      width: 50%;
+      position: relative;
+      min-width: 300px; }
+      #pres5 .container-HomePod .view-techHomePod .figure {
+        height: 90%; }
+        #pres5 .container-HomePod .view-techHomePod .figure .figure-home {
+          position: absolute;
+          height: 95%;
+          width: 100%;
+          background-size: 75%;
+          background-repeat: no-repeat;
+          background-position: center;
+          margin: 0;
+          opacity: 0;
+          transition: opacity 2s; }
+        #pres5 .container-HomePod .view-techHomePod .figure #home1 {
+          background-image: url("../media/homePod/guts_1_medium_2x.jpg"); }
+        #pres5 .container-HomePod .view-techHomePod .figure #home2 {
+          background-image: url("../media/homePod/guts_2_medium_2x.jpg"); }
+        #pres5 .container-HomePod .view-techHomePod .figure #home3 {
+          background-image: url("../media/homePod/guts_3_medium_2x.jpg"); }
+        #pres5 .container-HomePod .view-techHomePod .figure #home4 {
+          background-image: url("../media/homePod/guts_4_medium_2x.jpg"); }
+        #pres5 .container-HomePod .view-techHomePod .figure #home5 {
+          background-image: url("../media/homePod/homepod_side_medium_2x.jpg"); }
+      #pres5 .container-HomePod .view-techHomePod .pagination-figure {
+        display: flex;
+        justify-content: center;
+        height: 10%; }
+        #pres5 .container-HomePod .view-techHomePod .pagination-figure ul {
+          list-style: none;
+          display: flex;
+          width: 50%;
+          justify-content: space-around;
+          padding: 0; }
+          #pres5 .container-HomePod .view-techHomePod .pagination-figure ul .point {
+            height: 15px;
+            width: 15px;
+            background-color: #000;
+            opacity: 0.5;
+            border-radius: 50%;
+            cursor: pointer; }
+
+.pres-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 800px;
+  margin-bottom: 5%; }
+  .pres-text h2 {
+    text-align: center;
+    font-size: 3vw;
+    color: transparent;
+    background-size: 51% 100%;
+    background-position: top left, top right;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 6px;
+    font-family: 'sf-pro';
+    line-height: 1.48164;
+    font-weight: 700;
+    background-image: linear-gradient(to left, #777dff 0px, #f154ff 200px, #f0357c 400px), linear-gradient(to right, #777dff 0px, #497ce2 200px, #37bdde 400px); }
+  .pres-text p {
+    font-size: 2.5vw;
+    line-height: 3vw; }
+
+@media all and (max-width: 900px) and (min-width: 760px) {
+  #pres1 div {
+    width: 750px; }
+
+  #pres2 .pres-text {
+    width: 750px; }
+  #pres2 .img-siri {
+    background-size: 50vw !important; }
+
+  #pres3 div {
+    width: 750px; }
+
+  #pres4 div {
+    width: 750px; }
+
+  #pres5 div {
+    width: 750px; } }
+@media all and (max-width: 750px) and (min-width: 460px) {
+  #pres1 div {
+    width: 450px; }
+    #pres1 div #presVideo {
+      height: calc(80vh - 70px); }
+
+  #pres2 .pres-text {
+    width: 450px; }
+  #pres2 .img-siri {
+    width: 80vw !important;
+    background-size: 50vh !important; }
+  #pres2 .text-siri {
+    width: 80vw !important;
+    height: 40vh !important;
+    min-width: 10px !important; }
+
+  #pres3 div {
+    width: 450px; }
+
+  #pres4 div {
+    width: 450px; }
+
+  #pres5 .text-techHomePod {
+    width: 80vw !important; }
+  #pres5 .active {
+    top: 10px; } }
+@media all and (max-width: 460px) {
+  #pres1 div {
+    width: 250px; }
+    #pres1 div #presVideo {
+      height: calc(50vh - 70px); }
+
+  #pres2 .pres-text {
+    width: 250px; }
+  #pres2 .img-siri {
+    width: 80vw !important;
+    background-size: 35vh !important; }
+  #pres2 .text-siri {
+    width: 80vw !important;
+    height: 40vh !important;
+    min-width: 10px !important; }
+    #pres2 .text-siri p {
+      font-size: 8vw !important; }
+
+  #pres3 div {
+    width: 250px; }
+
+  #pres4 div {
+    width: 250px; }
+
+  #pres5 div {
+    width: 250px; }
+    #pres5 div .active {
+      top: 10px; } }
+
+/*# sourceMappingURL=index.css.map */

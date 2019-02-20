@@ -22,7 +22,6 @@ function setPosition(){
 }
 
 function playFigure() {
-console.log('rgjbedoi')
     figure = setInterval(function () {
         setPosition()
         if(pos == figures.length-1){

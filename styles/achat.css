@@ -3,6 +3,9 @@ body {
   font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
   color: white; }
 
+main {
+  padding-top: 50px; }
+
 .HPnColor {
   width: 960px;
   margin: 0 auto;

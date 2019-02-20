@@ -1,55 +1,55 @@
-header .container_flex {
-  width: 960px;
-  margin: 0 auto;
-  display: flex;
-  padding: 5px 0px; }
-header .menu {
-  justify-content: flex-end;
-  margin: 0 auto;
-  padding: 10px 20px 15px 400px;
-  position: left;
-  font-size: 12px;
-  line-height: 1;
-  font-weight: 400;
-  letter-spacing: -.01em;
-  font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif; }
-header #header {
+#header {
+  background: linear-gradient(50deg, #BD3994, #4B99FD);
   margin: 0 auto;
   display: flex; }
-header #header .container_flex {
-  align-items: center; }
-header .logo {
-  color: #FFF;
-  margin-left: 10px;
-  font-size: 18px;
-  font-weight: 400;
-  text-decoration: none;
-  padding-top: 10px;
-  font-size: 20px;
-  line-height: 1;
-  font-weight: 400;
-  letter-spacing: -.01em;
-  font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif; }
-header nav {
-  flex-direction: row-reverse;
-  justify-content: flex-start;
-  margin: 0px 0px 20px 0px; }
-header nav a {
-  color: white;
-  font-size: 12px;
-  text-decoration: none;
-  display: inline-block;
-  padding: 5px 10px 0px 10px; }
-header nav a.current {
-  color: #ddd; }
-header nav ul {
-  position: relative; }
-header li {
-  list-style: none; }
-header .button {
-  border: 3px solid #BD3994;
-  border-radius: 20%;
-  background: linear-gradient(20deg, #BD3994, #4B99FD); }
+  #header .container_flex {
+    width: 960px;
+    margin: 0 auto;
+    display: flex;
+    padding: 5px 0px;
+    align-items: center; }
+  #header .menu {
+    justify-content: flex-end;
+    margin: 0 auto;
+    padding: 10px 20px 5px 400px;
+    position: left;
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+  #header .logo {
+    color: #FFF;
+    margin-left: 10px;
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    padding-top: 10px;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif; }
+  #header nav {
+    flex-direction: row-reverse;
+    justify-content: flex-start;
+    margin: 0px 0px 20px 0px; }
+  #header nav a {
+    color: white;
+    font-size: 10px;
+    text-decoration: none;
+    display: inline-block;
+    padding: 5px 10px 0px 10px; }
+  #header nav a.current {
+    color: #ddd; }
+  #header nav ul {
+    position: relative; }
+  #header li {
+    list-style: none; }
+  #header .button {
+    border: 3px solid #BD3994;
+    border-radius: 20%;
+    background: linear-gradient(20deg, #BD3994, #4B99FD); }
 
 /*
 *       FONTS
@@ -65,7 +65,7 @@ body {
   margin: 0;
   padding: 0; }
 
-p, a, h2 {
+p, a, h2, h4, h6 {
   font-family: 'sf-pro';
   color: #fff; }
 
@@ -79,5 +79,108 @@ header {
   width: 100vw;
   z-index: 2;
   background: linear-gradient(40deg, #BD3994, #4B99FD); }
+
+.pres-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 800px;
+  margin-bottom: 5%; }
+  .pres-text h2 {
+    text-align: center;
+    font-size: 45px;
+    color: transparent;
+    background-size: 51% 100%;
+    background-position: top left, top right;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 6px;
+    font-family: 'sf-pro';
+    line-height: 1.48164;
+    font-weight: 700;
+    background-image: linear-gradient(to left, #777dff 0px, #f154ff 200px, #f0357c 400px), linear-gradient(to right, #777dff 0px, #497ce2 200px, #37bdde 400px); }
+  .pres-text p {
+    font-size: 29px;
+    line-height: 39px; }
+
+.carac div.container {
+  width: 960px;
+  margin: 0 auto;
+  padding-top: 60px; }
+  .carac div.container div.title {
+    margin-left: 60px; }
+    .carac div.container div.title h4 {
+      margin: 0; }
+  .carac div.container div.liseret {
+    margin-top: 20px;
+    height: 1px;
+    width: 960px;
+    background: #707070; }
+  .carac div.container div.displayFlexGeneral {
+    display: flex;
+    flex-direction: row; }
+    .carac div.container div.displayFlexGeneral div#description {
+      margin: 55px 90px 0 90px; }
+      .carac div.container div.displayFlexGeneral div#description h6 {
+        text-align: left; }
+    .carac div.container div.displayFlexGeneral div div.displayFlexSpecific {
+      display: flex;
+      flex-direction: row; }
+      .carac div.container div.displayFlexGeneral div div.displayFlexSpecific div.category {
+        margin-right: 20px; }
+        .carac div.container div.displayFlexGeneral div div.displayFlexSpecific div.category p {
+          text-align: right; }
+        .carac div.container div.displayFlexGeneral div div.displayFlexSpecific div.category div#dimensions {
+          height: 43px; }
+      .carac div.container div.displayFlexGeneral div div.displayFlexSpecific div.element {
+        width: 150px; }
+        .carac div.container div.displayFlexGeneral div div.displayFlexSpecific div.element div {
+          width: 80px; }
+    .carac div.container div.displayFlexGeneral img.HomePod {
+      width: 200px;
+      height: auto;
+      margin: 30px 20px 0 20px; }
+    .carac div.container div.displayFlexGeneral h6 {
+      text-align: center; }
+  .carac div.container div.displayFlexGeneral div.title {
+    width: 250px;
+    margin-top: 30px;
+    margin-right: 20px;
+    margin-left: 0; }
+    .carac div.container div.displayFlexGeneral div.title h6 {
+      text-align: right; }
+  .carac div.container div.displayFlexGeneral div.faqItem {
+    margin: 0;
+    cursor: pointer;
+    width: 700px; }
+    .carac div.container div.displayFlexGeneral div.faqItem h6 {
+      border-top: 0.5px solid #707070;
+      border-left: 0.5px solid #707070;
+      margin: 0;
+      position: relative;
+      height: 100px; }
+    .carac div.container div.displayFlexGeneral div.faqItem h6.number1 {
+      border-top: none; }
+    .carac div.container div.displayFlexGeneral div.faqItem h6::after {
+      content: url("../images/arrow.png");
+      position: absolute;
+      top: 40px;
+      right: 50px;
+      font-size: 15px;
+      transition: all linear 0.25s;
+      transform: rotate(0deg); }
+    .carac div.container div.displayFlexGeneral div.faqItem div.answer {
+      display: none; }
+  .carac div.container div.displayFlexGeneral div.faqItem.is-open h6 {
+    height: 8px; }
+  .carac div.container div.displayFlexGeneral div.faqItem.is-open h6::after {
+    transform: rotate(-90deg); }
+  .carac div.container div.displayFlexGeneral div.faqItem.is-open div.answer {
+    display: block;
+    padding: 20px;
+    padding-left: 40px;
+    padding-right: 70px;
+    border-left: 0.5px solid #707070; }
 
 /*# sourceMappingURL=main.css.map */

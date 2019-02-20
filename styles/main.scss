@@ -1,83 +1,84 @@
-#header {
-  background: linear-gradient(50deg,  #BD3994,#4B99FD);
+header{
+  .container_flex{
+  width: 940px;
   margin: 0 auto;
   display: flex;
+  height: 100%;
+  align-items: center;
+  justify-content: space-around;
+}
 
-  .container_flex {
-    width: 960px;
-    margin: 0 auto;
-    display: flex;
-    padding: 5px 0px;
+ul .container_flex{
+  justify-content: space-between;
+}
+
+.menu{
+  display: flex;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: -.01em;
+  font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+#header{
+  margin: 0 auto;
+  display: flex;
+}
+
+#header .container_flex{
+  justify-content: space-between;
+  display: flex;
   align-items: center;
 }
-  .menu {
-    justify-content: flex-end;
-    margin: 0 auto;
-    padding: 10px 20px 5px 400px;
-    position: left;
-    font-size: 12px;
-    line-height: 1;
-    font-weight: 400;
-    letter-spacing: -.01em;
-    font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-  }
 
-
-  .logo {
-    color:#FFF;
-    margin-left:10px;
-    font-size:18px;
-    font-weight:400;
-    text-decoration:none;
-    padding-top: 10px;
-    font-size: 20px;
-    line-height: 1;
-    font-weight: 400;
-    letter-spacing: -.01em;
-    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
-  }
-
-  nav{
-    flex-direction: row-reverse;
-    justify-content: flex-start;
-    margin: 0px 0px 20px 0px;
-  }
-
-  nav a {
-    color: white;
-    font-size: 10px;
-    text-decoration: none;
-    display: inline-block;
-    padding: 5px 10px 0px 10px;
-  }
-
-  nav a.current {
-    color: #ddd;
-  }
-
-  nav ul {
-    position: relative;
-  }
-
-  li {
-    list-style: none;
-  }
-
-  .button{
-    border: 3px solid #BD3994;
-    border-radius: 20%;
-    background: linear-gradient(20deg, #BD3994, #4B99FD)
-  }
-
-
+.logo{
+  color:#FFF;
+  margin-left:10px;
+  font-size:18px;
+  font-weight:400;
+  text-decoration:none;
+  font-size: 25px;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: -.01em;
+  font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
 }
 
+nav a{
+  color:white;
+  font-size:12px;
+  text-decoration:none;
+  display:inline-block;
+  padding:5px 15px 0px 15px;
+  flex-wrap: nowrap;
+}
+
+nav a.current{
+  color: #ddd;
+}
+
+nav ul{
+  position:relative;
+}
+
+li{
+  list-style: none;
+}
+
+.button{
+  border: thin solid #BD3994;
+  border-radius: 10%;
+  background: #BD3994;
+  padding-bottom: 2px;
+}
+
+}
 /*
 *       FONTS
  */
 @font-face {
   font-family: 'sf-pro';
-  src: url("../fonts/SFPro/SF-Pro-Text-light.otf")format("truetype");
+  src: url("../fonts/SFPro/SF-Pro-Text-Regular.otf")format("truetype");
 }
 
 /*
@@ -95,18 +96,16 @@ p,a,h2,h3,h4,h5,h6{
   color: #fff;
 }
 
-h2{
-  font-size: 2em;
-}
-
 
 header{
   height: 48px;
-  display: block;
+  display: flex;
   position: fixed;
   width: 100vw;
   z-index: 2;
   background:linear-gradient(40deg, #BD3994, #4B99FD);
+  justify-content: space-between;
+  opacity:0.95;
 }
 
 
@@ -114,7 +113,7 @@ header{
 .carac{
 
   div.container{
-    width: 960px;
+    width: 940px;
     margin: 0 auto;
     padding-top: 60px;
     div.title{
@@ -141,9 +140,6 @@ header{
       h4{
         text-align: left;
       }
-    }
-
-    div{
       div.displayFlexSpecific{
         display: flex;
         flex-direction: row;
@@ -161,17 +157,26 @@ header{
           height: 180px;
           p{
             font-size: 15px;
-            margin-bottom: 20px;
+            margin-bottom: 23px;
+          }
+          p#poids{
+            margin-bottom: 16px;
           }
           width: 150px;
            div{
              width: 80px;
              p{
                font-size: 15px;
+               margin-top: 0;
              }
            }
         }
       }
+    }
+
+    div.displayFlexSpecific{
+      display: flex;
+      flex-direction: row;
     }
 
     img.HomePod{
@@ -187,7 +192,10 @@ header{
 
     }
 
-    div.displayFlexGeneral{
+    div{
+      div.displayFlexGeneral{
+        display: flex;
+        flex-direction: row;
       div.title{
         width: 250px;
         margin-top: 20px;
@@ -203,7 +211,7 @@ header{
         cursor: pointer;
         width: 700px;
 
-        h6{
+        h4{
           border-top: 0.5px solid #707070;
           border-left: 0.5px solid #707070;
           margin: 0;
@@ -211,10 +219,10 @@ header{
           height: 100px;
           color: #000;
         }
-        h6.number1{
+        h4.number1{
           border-top: none;
         }
-        h6::after{
+        h4::after{
           content: url("../images/arrow.png");
           position: absolute;
           top: 40px;
@@ -228,22 +236,120 @@ header{
         }
       }
       div.faqItem.is-open{
-        h6{
+        h4{
           height: 8px;
           //background-color: #191919;
         }
-        h6::after{
+        h4::after{
           transform: rotate(-90deg);
         }
         div.answer{
           display: block;
           padding: 20px;
           padding-left: 40px;
-          padding-right: 70px;
+          padding-right: 80px;
           border-left: 0.5px solid #707070;
-          //background-color: #191919;
+          a{
+            text-decoration: none;
+            color: #1F93E0;
+          }
+          a:hover{
+            text-decoration: underline;
+          }
         }
       }
     }
   }
+}
+}
+
+// Responsive Page2 : Caractéristiques techniques
+
+@media screen and (min-width:768px) and (max-width:1024px)
+{ .carac{
+  div.container{
+    width:768px;
+  div.liseret{
+    width: 768px;
+    }
+    div.displayFlexGeneral{
+      div#description{
+        margin: 55px 55px 0 45px;}
+      div.displayFlexSpecific{
+        img.HomePod{
+          margin: 30px 1px 0 1px;
+        }
+      }
+    }
+
+div{  div.displayFlexGeneral{
+      div.title{
+        width: 200px;
+      }
+      div.faqItem{
+        width: 550px;
+  }
+}
+}
+}
+}
+}
+
+@media screen and (max-width:768px)
+{
+  .carac{
+  div.container{
+    width:100%;
+
+  div.liseret{
+    width: 100%;
+    }
+  div.displayFlexGeneral{
+      flex-direction: column-reverse;
+      div#description{
+        margin: 0 auto;
+        width: 215px;
+        div.displayFlexSpecific{
+         width: 100%;
+        }
+        }
+      div.displayFlexSpecific{
+        width: 400px;
+        margin: 0 auto;
+        img.HomePod{
+          margin: 30px 1px 0 1px;
+        }
+      }
+    }
+  div{
+    div.displayFlexGeneral{
+    flex-direction: column;
+      div.title{
+        display: none;
+        }
+        div.faqItem{
+          margin: 0;
+          cursor: pointer;
+          width: 100%;
+          h4{
+            width: 100%;
+            color:#fff;
+            text-align: left;
+            padding-top: 10px;
+            border-left: none;
+          }
+    }
+    }
+  div.faqItem.is-open{
+    h4{
+      height: 100px;
+      //background-color: #191919;
+    }
+    div.answer{
+      border-left: none;
+}
+}
+}
+}
+}
 }

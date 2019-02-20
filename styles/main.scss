@@ -90,7 +90,7 @@ body{
 }
 
 
-p,a,h2,h4,h6{
+p,a,h2,h3,h4,h5,h6{
   font-family: 'sf-pro';
   color: #fff;
 }
@@ -146,7 +146,7 @@ header{
     padding-top: 60px;
     div.title{
       margin-left: 60px;
-      h4{
+      h2{
         margin: 0;
       }
     }
@@ -165,7 +165,7 @@ header{
 
     div#description{
       margin: 55px 90px 0 90px;
-      h6{
+      h4{
         text-align: left;
       }
     }
@@ -175,18 +175,27 @@ header{
         display: flex;
         flex-direction: row;
         div.category{
-          margin-right: 20px;
+          margin-right: 10px;
           p{
           text-align: right;
+          font-size: 15px;
           }
           div#dimensions{
           height: 43px;
           }
         }
         div.element{
+          height: 180px;
+          p{
+            font-size: 15px;
+            margin-bottom: 20px;
+          }
           width: 150px;
            div{
              width: 80px;
+             p{
+               font-size: 15px;
+             }
            }
         }
       }
@@ -198,7 +207,7 @@ header{
       margin: 30px 20px 0 20px;
     }
 
-    h6{
+    h5{
       text-align: center;
 
     }
@@ -208,11 +217,11 @@ header{
     div.displayFlexGeneral{
       div.title{
         width: 250px;
-        margin-top: 30px;
-        margin-right: 20px;
+        margin-top: 20px;
+        margin-right: 10px;
         margin-left: 0;
 
-        h6{
+        h4{
           text-align: right;
         }
       }
@@ -227,6 +236,7 @@ header{
           margin: 0;
           position: relative;
           height: 100px;
+          color: #000;
         }
         h6.number1{
           border-top: none;

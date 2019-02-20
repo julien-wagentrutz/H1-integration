@@ -5,7 +5,9 @@
   #header .container_flex {
     width: 960px;
     margin: 0 auto;
-    display: flex; }
+    display: flex;
+    padding: 5px 0px;
+    align-items: center; }
   #header .menu {
     justify-content: flex-end;
     margin: 0 auto;
@@ -16,17 +18,22 @@
     font-weight: 400;
     letter-spacing: -.01em;
     font-family: "SF Pro Text", "SF Pro Icons", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
-  #header .container_flex {
-    align-items: center; }
   #header .logo {
     color: #FFF;
     margin-left: 10px;
     font-size: 18px;
     font-weight: 400;
-    text-decoration: none; }
+    text-decoration: none;
+    padding-top: 10px;
+    font-size: 20px;
+    line-height: 1;
+    font-weight: 400;
+    letter-spacing: -.01em;
+    font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif; }
   #header nav {
     flex-direction: row-reverse;
-    justify-content: flex-start; }
+    justify-content: flex-start;
+    margin: 0px 0px 20px 0px; }
   #header nav a {
     color: white;
     font-size: 10px;
@@ -39,8 +46,10 @@
     position: relative; }
   #header li {
     list-style: none; }
-  #header nav ul li:first-child {
-    margin-left: 65px; }
+  #header .button {
+    border: 3px solid #BD3994;
+    border-radius: 20%;
+    background: linear-gradient(20deg, #BD3994, #4B99FD); }
 
 /*
 *       FONTS
@@ -69,7 +78,7 @@ header {
   position: fixed;
   width: 100vw;
   z-index: 2;
-  background-image: linear-gradient(to left, #777dff 0px, #f154ff 200px, #f0357c 400px), linear-gradient(to right, #777dff 0px, #497ce2 200px, #37bdde 400px); }
+  background: linear-gradient(40deg, #BD3994, #4B99FD); }
 
 .pres-text {
   display: flex;

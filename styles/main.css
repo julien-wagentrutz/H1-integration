@@ -238,5 +238,100 @@ header {
 @media all and (max-width: 750px) and (min-width: 460px) {
   #header .container_flex {
     width: 450px; } }
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .carac div.container {
+    width: 768px; }
+    .carac div.container div.liseret {
+      width: 768px; }
+    .carac div.container div.displayFlexGeneral div#description {
+      margin: 55px 55px 0 45px; }
+    .carac div.container div.displayFlexGeneral div.displayFlexSpecific img.HomePod {
+      margin: 30px 1px 0 1px; }
+    .carac div.container div div.displayFlexGeneral div.title {
+      width: 200px; }
+    .carac div.container div div.displayFlexGeneral div.faqItem {
+      width: 550px; } }
+@media screen and (max-width: 768px) {
+  .carac div.container {
+    width: 100%; }
+    .carac div.container div.liseret {
+      width: 100%; }
+    .carac div.container div.displayFlexGeneral {
+      flex-direction: column-reverse; }
+      .carac div.container div.displayFlexGeneral div#description {
+        margin: 0 auto;
+        width: 215px; }
+        .carac div.container div.displayFlexGeneral div#description div.displayFlexSpecific {
+          width: 100%; }
+      .carac div.container div.displayFlexGeneral div.displayFlexSpecific {
+        width: 400px;
+        margin: 0 auto; }
+        .carac div.container div.displayFlexGeneral div.displayFlexSpecific img.HomePod {
+          margin: 30px 1px 0 1px; }
+    .carac div.container div div.displayFlexGeneral {
+      flex-direction: column; }
+      .carac div.container div div.displayFlexGeneral div.title {
+        display: none; }
+      .carac div.container div div.displayFlexGeneral div.faqItem {
+        margin: 0;
+        cursor: pointer;
+        width: 100%; }
+        .carac div.container div div.displayFlexGeneral div.faqItem h4 {
+          width: 100%;
+          color: #E7E7E7;
+          text-align: left;
+          padding-top: 10px;
+          border-left: none; }
+    .carac div.container div div.faqItem.is-open h4 {
+      height: 100px; }
+    .carac div.container div div.faqItem.is-open div.answer {
+      border-left: none; } }
+footer {
+  background-color: #111; }
+  footer .container {
+    width: 1100px;
+    margin: 0 auto; }
+    footer .container ul {
+      display: flex;
+      justify-content: space-between;
+      list-style: none; }
+      footer .container ul li {
+        margin: 10px; }
+        footer .container ul li h6, footer .container ul li p {
+          color: #CBCBCB;
+          text-align: center;
+          width: 200px; }
+        footer .container ul li p {
+          font-size: 10px; }
+        footer .container ul li a {
+          font-size: 10px;
+          color: #1F93E0; }
+        footer .container ul li a:hover {
+          text-decoration: none; }
+    footer .container p {
+      font-size: 10px;
+      color: #707070; }
+    footer .container .lastItems a {
+      color: #707070; }
+    footer .container .lastItems a:hover {
+      text-decoration: none; }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  footer .container {
+    width: 768px; }
+    footer .container ul.firstItems {
+      display: flex;
+      flex-wrap: wrap; }
+      footer .container ul.firstItems li h6, footer .container ul.firstItems li p {
+        width: 300px; } }
+@media screen and (max-width: 768px) {
+  footer .container {
+    width: 70%; }
+    footer .container ul.firstItems {
+      display: flex;
+      flex-wrap: wrap; }
+    footer .container ul.lastItems {
+      display: flex;
+      flex-wrap: wrap; } }
 
 /*# sourceMappingURL=main.css.map */

@@ -387,3 +387,184 @@ div{  div.displayFlexGeneral{
     }
   }
 }
+
+// Responsive Page2 : Caractéristiques techniques
+
+@media screen and (min-width:768px) and (max-width:1024px)
+{ .carac{
+  div.container{
+    width:768px;
+  div.liseret{
+    width: 768px;
+    }
+    div.displayFlexGeneral{
+      div#description{
+        margin: 55px 55px 0 45px;}
+      div.displayFlexSpecific{
+        img.HomePod{
+          margin: 30px 1px 0 1px;
+        }
+      }
+    }
+
+div{  div.displayFlexGeneral{
+      div.title{
+        width: 200px;
+      }
+      div.faqItem{
+        width: 550px;
+  }
+}
+}
+}
+}
+}
+
+@media screen and (max-width:768px)
+{
+  .carac{
+  div.container{
+    width:100%;
+
+  div.liseret{
+    width: 100%;
+    }
+  div.displayFlexGeneral{
+      flex-direction: column-reverse;
+      div#description{
+        margin: 0 auto;
+        width: 215px;
+        div.displayFlexSpecific{
+         width: 100%;
+        }
+        }
+      div.displayFlexSpecific{
+        width: 400px;
+        margin: 0 auto;
+        img.HomePod{
+          margin: 30px 1px 0 1px;
+        }
+      }
+    }
+  div{
+    div.displayFlexGeneral{
+    flex-direction: column;
+      div.title{
+        display: none;
+        }
+        div.faqItem{
+          margin: 0;
+          cursor: pointer;
+          width: 100%;
+          h4{
+            width: 100%;
+            color:#E7E7E7;
+            text-align: left;
+            padding-top: 10px;
+            border-left: none;
+          }
+    }
+    }
+  div.faqItem.is-open{
+    h4{
+      height: 100px;
+      //background-color: #191919;
+    }
+    div.answer{
+      border-left: none;
+}
+}
+}
+}
+}
+}
+
+
+//footer
+
+footer{
+   background-color: #111;
+
+  .container{
+    width: 1100px;
+    margin: 0 auto;
+
+  ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+  li{
+    margin: 10px;
+
+    h6,p,{
+      color: #CBCBCB;
+      text-align: center;
+      width: 200px;
+    }
+    p{
+      font-size: 10px;
+    }
+    a{
+      font-size: 10px;
+      color: #1F93E0;
+    }
+    a:hover{
+      text-decoration: none;
+    }
+  }
+
+  }
+  p{
+    font-size: 10px;
+    color: #707070;
+  }
+  .lastItems{
+    a{
+      color : #707070;
+    }
+    a:hover{
+      text-decoration: none;
+    }
+  }
+}
+}
+
+//RESPONSIVE FOOTER
+@media screen and (min-width:768px) and (max-width:1024px)
+{
+  footer{
+
+    .container{
+      width: 768px;
+
+    ul.firstItems{
+      display: flex;
+      flex-wrap: wrap;
+      li{
+        h6,p{
+          width: 300px
+        }
+      }
+    }
+  }
+  }
+}
+
+@media screen and (max-width:768px)
+{
+  footer{
+
+    .container{
+      width: 70%;
+
+    ul.firstItems{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    ul.lastItems{
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  }
+}

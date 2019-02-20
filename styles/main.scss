@@ -1,3 +1,69 @@
+header{
+  .container_flex{
+  width: 960px;
+  margin: 0 auto;
+  display: flex;
+}
+
+.menu{
+  justify-content: flex-end;
+  margin: 0 auto;
+  padding : 10px 20px 5px 400px;
+  position: left;
+  font-size: 12px;
+  line-height: 1;
+  font-weight: 400;
+  letter-spacing: -.01em;
+  font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+}
+
+#header{
+  background:linear-gradient(50deg, #4B99FD, #BD3994);
+  margin: 0 auto;
+  display: flex;
+}
+
+#header .container_flex{
+  align-items: center;
+}
+
+.logo{
+  color:#FFF;
+  margin-left:10px;
+  font-size:18px;
+  font-weight:400;
+  text-decoration:none;
+}
+
+nav{
+  flex-direction: row-reverse;
+  justify-content: flex-start;
+}
+
+nav a{
+  color:white;
+  font-size:10px;
+  text-decoration:none;
+  display:inline-block;
+  padding:5px 10px 0px 10px;
+}
+
+nav a.current{
+  color: #ddd;
+}
+
+nav ul{
+  position:relative;
+}
+
+li{
+  list-style: none;
+}
+
+nav ul li:first-child{
+  margin-left:65px;
+}
+}
 /*
 *       FONTS
  */
@@ -34,4 +100,3 @@ header{
   z-index: 2;
   background-image: linear-gradient(to left, #777dff 0px, #f154ff 200px, #f0357c 400px),linear-gradient(to right, #777dff 0px, #497ce2 200px, #37bdde 400px);
 }
-

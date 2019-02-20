@@ -1,3 +1,12 @@
+header .nav-wrapper {
+  color: #fff;
+  background: #000;
+  box-shadow: none; }
+header a {
+  font-family: "SF Pro Display","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  letter-spacing: 0.009em; }
 /*
 *       FONTS
  */

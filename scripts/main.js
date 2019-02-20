@@ -2,7 +2,10 @@ const figures = document.querySelectorAll('.figure-home');
 const points = document.querySelectorAll('.pagination-figure ul li')
 const figureExp = document.querySelectorAll('.text-techHomePod div')
 const sliders = document.querySelectorAll('.text-siri-content li');
+const figureblock = document.querySelector('.figure')
+const textblock = document.querySelector('.text-techHomePod')
 
+let figure;
 let pos = 0;
 
 
@@ -18,6 +21,25 @@ function setPosition(){
     figureExp[pos].classList.add('active')
 }
 
+function playFigure() {
+console.log('rgjbedoi')
+    figure = setInterval(function () {
+        setPosition()
+        if(pos == figures.length-1){
+            pos=0
+        }
+        else{
+            pos++
+        }
+    }, 5000)
+
+}
+
+function stopFigure() {
+    clearInterval(figure)
+}
+playFigure()
+
 
 for(let j = 0; j< points.length; j++){
     points[j].addEventListener(
@@ -29,18 +51,15 @@ for(let j = 0; j< points.length; j++){
     )
 }
 
-const figure = setInterval(function () {
-    setPosition()
-    if(pos == figures.length-1){
-        pos=0
-    }
-    else{
-        pos++
-    }
-}, 5000)
+figureblock.addEventListener(
+    "mouseenter",
+    stopFigure
+)
 
-
-
+figureblock.addEventListener(
+    'mouseout',
+    playFigure
+)
 
 
 

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8"/>
+    <title>HomePod Achat</title>
+    <meta name="description" content="description de ma page"/>
+    <link href="https://fonts.googleapis.com/css?family=SFProText" rel="stylesheet">
+    <link rel="stylesheet" href="styles/achat.css">
+  </head>
+  <body>
+    <header id="header">
+        <div class="container_flex">
+            <div class="logo">
+              <a href="index.html" title="logo" class="logo">HomePod</a>
+            </div>
+            <div class=menu>
+              <nav>
+                <ul class="container_flex">
+                  <li><a href="#" title="Item" class="current">Présentation</a></li>
+                  <li><a href="page2.html" title="Item">Caractéristiques techniques</a></li>
+                  <li><a href="#" title="Item" class="button">Acheter</a></li>
+                </ul>
+              </nav>
+            </div>
+        </div>
+    </header>
+    <main>   
+      <form action="achat.html">
+      <div class="HPnColor">
+        <div class="HPwhite">    
+         <div class="HP">
+           <img class="HPblanc" src="images/HomePod-blanc.png" alt="HomePod blanc">
+          </div>
+          <div class="input">
+            <input id="Blanc" type="radio" name="Couleur" value="Blanc">
+            <label for="Blanc">Blanc</label>
+          </div>
+        </div>      
+        <div class="HPblack">
+          <div class="HP">
+           <img class="HPnoir" src="images/HomePod-noir.jpg.png" alt="HomePod gris sidéral">
+          </div>
+          <div class="input">
+            <input id="Gris-sidéral" type="radio" name="Couleur" value="Gris-sidéral">
+            <label for="Gris-sidéral">Gris sidéral</label>
+          </div>
+        </div> 
+      </div>
+      </form>
+      <div class="Container2">
+        <div class="prix">
+          <span>349,00€</span>
+        </div> 
+        <div class="AppleCare">
+          <h2>Ajoutez l’AppleCare+</h2>
+          <h3>AppleCare+ pour HomePod</h3>
+          <span>45,00 €</span>
+          <button class="buttonStd">
+          <span>Ajouter</span>
+          </button>
+          <div class="taxe">
+              Inclut la taxe sur les primes d’assurance (au taux applicable)
+          </div>
+          <button type="submit" class="add-to-cart" name="add-to-cart" value="add-to-cart" title="Ajouter au Panier">
+            <span>Ajouter au Panier</span>
+          </button>
+          <div class="RetraitnLivraison">
+            <div class="retrait">
+              <span>Retrait :</span>
+             <br>
+              <button class="buttonStd2" type="submit" name="Disponibilité" value="Disponibilité" title="Vérifier la disponibilité">
+                <span>Vérifier la disponibilité</span>
+             </button>
+            </div>
+            <div class="livraison">
+             <span>Livraison :</span>
+             <br>
+              <button class="buttonStd2" type="submit" name="Plus d’options de livraison" value="Plus d’options de livraison" title="Plus d’options de livraison">
+                <span>Plus d’options de livraison</span>
+              </button>
+            </div>   
+          </div>
+          <p>
+            iPhone 5s (ou ultérieur), iPad Pro, iPad (5e génération ou ultérieure), iPad Air (ou ultérieur), iPad mini 2 (ou ultérieur) ou iPod touch (6e génération) sous iOS 12 (ou version ultérieure) requis.
+         </p>
+         <p>
+            Faites-vous aider pour l’achat. <a class="chat" href="https://contactretail.apple.com/Help">Chattez dès maintenant</a> ou appelez le 0800 046 046.
+         </p>
+        </div>  
+      </div>
+        <div class="slider">
+          <div class="sliderContainer" style="left:0;">
+            <img src="images/HP1.jpg" alt="Item 1">
+            <img src="images/HP2.jpg" alt="Item 2">
+            <img src="images/HP3.jpg" alt="Item 3">
+            <img src="images/HP4.jpg" alt="Item 4">
+            <img src="images/HP5.jpg" alt="Item 5">
+            <img src="images/HP6.jpg" alt="Item 6">
+          </div>
+        </div>
+        <div class="navigation">
+          <button class="arrowLeft">&lt;</button>
+          <button class="arrowRight">></button>
+        </div>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="scripts/achat.js"></script>
+  </body>
+</html>  

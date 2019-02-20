@@ -1,23 +1,85 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
     <head>
         <meta charset="UTF-8">
-        <title>Title</title>
-        <link href="materialize/css/materialize.min.css" rel="stylesheet" type="text/css"/>
+        <title>HomePod</title>
+        <link href="styles/main.css" type="text/css" rel="stylesheet">
+        <link href="styles/index.css" type="text/css" rel="stylesheet">
     </head>
     <body>
-        <header class="container">
-          <nav>
-            <div class="nav-wrapper">
-              <a href="#" class="brand-logo">HomePod</a>
-              <ul id="nav-mobile" class="right hide-on-med-and-down">
-                <li><a href="#.html">Présentation</a></li>
-                <li><a href="#.html">Caractéristiques techniques</a></li>
-                <li><a href="#.html">Acheter</a></li>
-              </ul>
-            </div>
-          </nav>
-        </header>
+      <header id="header">
+      <div class="container_flex">
+      <div class="logo">
+        <a href="/" title="logo" class="logo">HomePod</a>
+      </div>
+      <div class=menu>
+        <nav>
+          <ul class="container_flex">
+            <li><a href="#" title="Item" class="current">Présentation</a></li>
+            <li><a href="#" title="Item">Caractéristiques techniques</a></li>
+            <li><a href="#" title="Item">Acheter</a></li>
+          </ul>
+        </nav>
+      </div>
+      </div>
+      </header>
+        <main>
+            <section id="pres1">
+                <div>
+                    <video id="presVideo" autoplay muted>
+                        <source src="media/presLarge.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="arrow"></div>
+                    <p>
+                        Le HomePod est une enceinte révolutionnaire qui s’adapte au lieu dans lequel elle se trouve et livre un son haute fidélité en toutes circonstances. Associé à Apple Music et Siri, le HomePod vous offre un moyen inédit d’interagir avec la musique et d’en découvrir davantage. Il peut aussi vous venir en aide dans vos tâches quotidiennes et vous permettre de contrôler votre maison connectée, au seul son de votre voix.
+                    </p>
+                </div>
+            </section>
+            <section id="pres2">
+                <div>
+                    <div class="img-siri">
+                        <div class="img-siri-active"></div>
+                    </div>
+                    <div class="text-siri">
+                        <ul>
+                            <li><a>Dis Siri, envoie « Je suis en retard » à Sofia.</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+            <section id="pres5">
+                <div class="text-techHomePod">
+                    <p>
+
+                    </p>
+                    <p>
+
+                    </p>
+                    <p>
+
+                    </p>
+                    <p>
+
+                    </p>
+                    <p>
+
+                    </p>
+                </div>
+                <div class="view-techHomePod">
+                    <figure class="figure-home" id="home1"></figure>
+                    <figure class="figure-home" id="home2"></figure>
+                    <figure class="figure-home" id="home3"></figure>
+                    <figure class="figure-home" id="home4"></figure>
+                    <figure class="figure-home" id="home5"></figure>
+                </div>
+            </section>
+        </main>
+        <footer>
+
+        </footer>
+        <script src="scripts/main.js"></script>
+
         <script src="materialize/js/materialize.min.js"></script>
     </body>
 </html>

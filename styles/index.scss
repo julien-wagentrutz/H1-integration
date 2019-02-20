@@ -1,0 +1,113 @@
+
+#pres1{
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  div{
+    width: 750px;
+    p{
+      font-size: 21px;
+      line-height: 32px;
+    }
+    #presVideo{
+      padding-top: 20px;
+      height: calc(100vh - 30px);
+    }
+  }
+}
+
+#pres2{
+  height: 100vh;
+  .img-siri{
+    position: relative;
+    background-image: url('../media/homepod_top_medium_2x copie.jpg');
+    margin-top: 50px;
+    height: 70vh;
+    background-size: 65vh;
+    width: 100vw;
+    background-position: center;
+    background-repeat: no-repeat;
+    .img-siri-active{
+      position: absolute;
+      background-image: url(../media/siri_fallback_large.png);
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      opacity: 0.7;
+      background-repeat: no-repeat;
+    }
+  }
+  .text-siri{
+    height: calc(30vh - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    a{
+      color: transparent;
+      background-size: 51% 100%;
+      background-position: top left, top right;
+      background-repeat: no-repeat;
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      padding-bottom: 6px;
+      font-size: 30px;
+      font-family: 'sf-pro';
+      line-height: 1.48164;
+      font-weight: 700;
+      background-image: linear-gradient(to left, #777dff 0px, #f154ff 200px, #f0357c 400px),linear-gradient(to right, #777dff 0px, #497ce2 200px, #37bdde 400px);
+    }
+  }
+}
+
+#pres5{
+  position: relative;
+  background-color: #fff;
+  height: 100vh;
+  .text-techHomePod{
+    left: 0;
+  }
+  .view-techHomePod{
+    right: 0;
+    #home1{
+      background-image: url("../media/homePod/guts_1_medium_2x.jpg");
+      opacity: 0.9;
+    }
+    #home2{
+      background-image: url("../media/homePod/guts_2_medium_2x.jpg");
+      opacity: 0.9;
+    }
+    #home3{
+      background-image: url("../media/homePod/guts_3_medium_2x.jpg");
+      opacity: 0.9;
+    }
+    #home4{
+      background-image: url("../media/homePod/guts_4_medium_2x.jpg");
+      opacity: 0.9;
+    }
+    #home5{
+      background-image: url("../media/homePod/homepod_side_medium_2x.jpg");
+      opacity: 0.9;
+    }
+  }
+  div{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    width: 50vw;
+    height: 100vh;
+    .figure-home{
+      position: absolute;
+      margin: 0;
+      width: 90%;
+      height: 100%;
+      right: 0px;
+      background-size: 84%;
+      background-repeat: no-repeat;
+      background-position: center;
+      transition: opacity 2s;
+    }
+  }
+}
+
+

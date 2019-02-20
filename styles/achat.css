@@ -126,9 +126,9 @@ a.chat {
 
 .slider {
   position: relative;
-  padding: 100px 0;
+  padding-top: 100px;
   width: 480px;
-  height: 480px;
+  height: 260px;
   overflow: hidden;
   margin: 0 auto; }
 

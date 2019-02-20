@@ -110,3 +110,126 @@ header{
   z-index: 2;
   background:linear-gradient(40deg, #BD3994, #4B99FD);
 }
+
+
+//PAGE 2 : CARACTERISTIQUES techniques
+div.container{
+  width: 960px;
+  margin: 0 auto;
+
+  div.title{
+    margin-left: 60px;
+  }
+
+
+  div.liseret{
+    margin-top: 20px;
+    height: 1px;
+    width: 960px;
+    background: #707070;
+  }
+
+  div.displayFlexGeneral{
+  display: flex;
+  flex-direction: row;
+
+  div#description{
+    margin: 55px 90px 0 90px;
+    h6{
+      text-align: left;
+    }
+  }
+
+  div{
+    div.displayFlexSpecific{
+      display: flex;
+      flex-direction: row;
+      div.category{
+        margin-right: 20px;
+        p{
+        text-align: right;
+        }
+        div#dimensions{
+        height: 43px;
+        }
+      }
+      div.element{
+        width: 150px;
+         div{
+           width: 80px;
+         }
+      }
+    }
+  }
+
+  img.HomePod{
+    width: 200px;
+    height: auto;
+    margin: 30px 20px 0 20px;
+  }
+
+  h6{
+    text-align: center;
+
+  }
+
+  }
+
+  div.displayFlexGeneral{
+    div.title{
+      width: 250px;
+      margin-top: 30px;
+      margin-right: 20px;
+      margin-left: 0;
+
+      h6{
+        text-align: right;
+      }
+    }
+    div.faqItem{
+      margin: 0;
+      cursor: pointer;
+      width: 700px;
+
+      h6{
+        border-top: 0.5px solid #707070;
+        border-left: 0.5px solid #707070;
+        margin: 0;
+        position: relative;
+        height: 100px;
+      }
+      h6.number1{
+        border-top: none;
+      }
+      h6::after{
+        content: url("../images/arrow.png");
+        position: absolute;
+        top: 40px;
+        right: 50px;
+        font-size: 15px;
+        transition: all linear 0.25s;
+        transform: rotate(0deg);
+      }
+      div.answer{
+        display: none;
+      }
+    }
+    div.faqItem.is-open{
+      h6{
+        height: 8px;
+        //background-color: #191919;
+      }
+      h6::after{
+        transform: rotate(-90deg);
+      }
+      div.answer{
+        display: block;
+        padding: 20px;
+        padding-left: 40px;
+        padding-right: 70px;
+        border-left: 0.5px solid #707070;
+        //background-color: #191919;
+      }
+    }
+  }
+}

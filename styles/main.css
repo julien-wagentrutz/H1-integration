@@ -369,7 +369,8 @@ footer {
     footer .container ul {
       display: flex;
       justify-content: space-between;
-      list-style: none; }
+      list-style: none;
+      padding: 0; }
       footer .container ul li {
         margin: 10px; }
         footer .container ul li h6, footer .container ul li p {

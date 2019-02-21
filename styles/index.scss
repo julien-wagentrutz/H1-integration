@@ -434,11 +434,14 @@
     }
   }
   #pres5{
-    div{
-      width:250px;
-      .active{
-        top: 10px;
-      }
+    .text-techHomePod{
+      width:100vw!important;
+    }
+    .view-techHomePod{
+      width:100vw!important;
+    }
+    .active{
+      top: 10px;
     }
   }
 }

@@ -325,9 +325,11 @@
   #pres4 div {
     width: 250px; }
 
-  #pres5 div {
-    width: 250px; }
-    #pres5 div .active {
-      top: 10px; } }
+  #pres5 .text-techHomePod {
+    width: 100vw !important; }
+  #pres5 .view-techHomePod {
+    width: 100vw !important; }
+  #pres5 .active {
+    top: 10px; } }
 
 /*# sourceMappingURL=index.css.map */

@@ -5,9 +5,9 @@ $marginN : 0 auto;
 $backgroundBody: #000;
 $backgroundMain: #000;
 
-body{
+.body{
     background-color: $backgroundMain;
-    font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family: 'sf-pro';
     color: white;
     
 }
@@ -263,11 +263,11 @@ $arrowpadding: 5px;
       font-size: 70px;
     }
     .arrowLeft{
-      top: 293%;
+      top: 302%;
       left: 25px
     }
     .arrowRight{
-      top: 293%;
+      top: 302%;
       right: 25px;
     }
   }

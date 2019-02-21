@@ -5,9 +5,9 @@ $marginN : 0 auto;
 $backgroundBody: #000;
 $backgroundMain: #000;
 
-body{
+.body{
     background-color: $backgroundMain;
-    font-family: SF Pro Text,SF Pro Icons,AOS Icons,Helvetica Neue,Helvetica,Arial,sans-serif;
+    font-family: 'sf-pro';
     color: white;
     
 }

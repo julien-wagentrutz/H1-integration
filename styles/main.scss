@@ -813,7 +813,7 @@ footer{
 
 @media all and (max-width: 460px)  {
   #header .menu ul {
-    display: flex;
+    display: none;
     flex-direction: column;
     /* margin-top: 48px; */
     right: 20px;
@@ -828,5 +828,4 @@ footer{
     list-style: none;
     padding: 15px 5px;
   }
-
 }

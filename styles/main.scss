@@ -112,6 +112,107 @@ header{
 }
 
 
+// PAGE 2 : musique
+.carac{
+  div#allerPlusLoin{
+  .musique{
+    position: relative;
+      img.fond{
+      padding-top: 45px;
+      width: 100%;
+      }
+      img.decoration{
+        position: absolute;
+        width: 400px;
+        height: auto;
+        top: 55%;
+        left: 36%;
+    }
+    #title1{
+      position: absolute;
+      top: 80%;
+      left: 5%;
+      font-size: 30px;
+    }
+    #title2{
+      position: absolute;
+      top: 80%;
+      right: 5%;
+      font-size: 30px;
+    }
+    }
+    #pres2{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      .pres-text{
+      width: 800px;
+      margin-top: 12%;
+      margin-bottom: 6%;
+      h3 {
+        text-align: center;
+        font-size: 40px;
+        color: transparent;
+        background-size: 51% 100%;
+        background-position: top left, top right;
+        background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-bottom: 6px;
+        font-family: 'sf-pro';
+        line-height: 1.48164;
+        font-weight: 700;
+        background-image: linear-gradient(to left, #777dff 0px, #f154ff 200px, #f0357c 400px), linear-gradient(to right, #777dff 0px, #497ce2 200px, #37bdde 400px);
+
+      }
+      p {
+        font-size: 20px;
+        text-align: center;
+        line-height: 3vw;
+      }
+    }
+    }
+    #video{
+      width: 100%;
+      background-color: #fff;
+
+      div{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        width: 900px;
+        height: auto;
+        margin: 0 auto;
+        position: relative;
+      .imgVideo{
+        width: 900px;
+        height:auto;
+      }
+      div{
+        position: absolute;
+      left : 0;
+        top : 60%;
+      h3{
+        font-size: 30px;
+        }
+      h3,p{
+        text-align: center;
+      }
+      a{
+        text-decoration: none;
+        color: #1F93E0;
+        top : 46%;
+      }
+      a:hover{
+        text-decoration: underline;
+      }
+    }
+    }
+  }
+}
+}
+
+
+
 //PAGE 2 : CARACTERISTIQUES techniques
 .carac{
 
@@ -530,12 +631,12 @@ footer{
 }
 
 //RESPONSIVE FOOTER
-@media screen and (min-width:768px) and (max-width:1024px)
+@media screen and (min-width:800px) and (max-width:1024px)
 {
   footer{
 
     .container{
-      width: 768px;
+      width: 800px;
 
     ul.firstItems{
       display: flex;
@@ -550,7 +651,7 @@ footer{
   }
 }
 
-@media screen and (max-width:768px)
+@media screen and (max-width:800px)
 {
   footer{
 

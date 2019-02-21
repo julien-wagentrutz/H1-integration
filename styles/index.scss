@@ -105,8 +105,9 @@
       position: relative;
       min-width: 375px;
       a{
+        position: absolute;
         color: #fff;
-        bottom: 50px;
+        bottom: 0px;
         font-family: 'sf-pro';
         border: 2px solid #fff;
         border-radius:46px;
@@ -178,8 +179,60 @@
 }
 
 #pres3{
-  height: 100vh;
+  display: block;
+  justify-content: center;
+  margin-top: 10%;
+  .container{
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    .content_album{
+      width: 100vw;
+      display: flex;
+      overflow: hidden;
+      img{
+        width: 100%;
+        height: 100%;
+      }
+      .col{
+        width: 22%;
+        min-width: 130px;
+        margin: 0 10px;
+      }
+      .pochette-grand{
+        height: 15vw;
+        width: 15vw;
+        margin: 2px 0px;
+        min-width: 100px;
+        min-height: 100px;
+      }
 
+      .row1{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .row2{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        .pochette-petit{
+          height: 8vw;
+          width: 7.5vw;
+          margin: 2px 2px;
+          min-width: 50px;
+          min-height: 50px;
+        }
+      }
+    }
+    .content-homePod{
+      position: absolute;
+      width: 50vw;
+      img{
+        width: 50vw;
+      }
+    }
+  }
 }
 
 #pres4{
@@ -297,6 +350,7 @@
   flex-direction: column;
   justify-content: center;
   width: 800px;
+  margin: 0 auto;
   margin-bottom: 5%;
   h2 {
     text-align: center;
@@ -335,9 +389,9 @@
     }
   }
   #pres3{
-     div{
-       width:750px;
-     }
+      .pres-text{
+        width: 750px;
+      }
   }
   #pres4{
     div{
@@ -375,8 +429,8 @@
     }
   }
   #pres3{
-    div{
-      width:450px;
+    .pres-text{
+      width: 450px;
     }
   }
   #pres4{
@@ -425,9 +479,19 @@
 
   }
   #pres3{
-    div{
-      width:250px;
+    .pres-text{
+      width: 250px;
     }
+    .content-homePod{
+      width: 100vw!important;
+      display: flex;
+      justify-content: center;
+      img{
+        height: 40vh;
+        width: auto!important;
+      }
+    }
+
   }
   #pres4{
     div{

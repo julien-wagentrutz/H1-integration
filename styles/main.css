@@ -103,7 +103,11 @@ header {
     line-height: 39px; }
 
 .carac div.container {
+<<<<<<< HEAD
   width: 960px;
+=======
+  width: 940px;
+>>>>>>> e227c0f0a1656a7155917b33bf653228bfa70c6f
   margin: 0 auto;
   padding-top: 60px; }
   .carac div.container div.title {
@@ -122,6 +126,7 @@ header {
       margin: 55px 90px 0 90px; }
       .carac div.container div.displayFlexGeneral div#description h4 {
         text-align: left; }
+<<<<<<< HEAD
     .carac div.container div.displayFlexGeneral div div.displayFlexSpecific {
       display: flex;
       flex-direction: row; }
@@ -142,12 +147,41 @@ header {
           width: 80px; }
           .carac div.container div.displayFlexGeneral div div.displayFlexSpecific div.element div p {
             font-size: 15px; }
+=======
+      .carac div.container div.displayFlexGeneral div#description div.displayFlexSpecific {
+        display: flex;
+        flex-direction: row; }
+        .carac div.container div.displayFlexGeneral div#description div.displayFlexSpecific div.category {
+          margin-right: 10px; }
+          .carac div.container div.displayFlexGeneral div#description div.displayFlexSpecific div.category p {
+            text-align: right;
+            font-size: 15px; }
+          .carac div.container div.displayFlexGeneral div#description div.displayFlexSpecific div.category div#dimensions {
+            height: 43px; }
+        .carac div.container div.displayFlexGeneral div#description div.displayFlexSpecific div.element {
+          height: 180px;
+          width: 150px; }
+          .carac div.container div.displayFlexGeneral div#description div.displayFlexSpecific div.element p {
+            font-size: 15px;
+            margin-bottom: 23px; }
+          .carac div.container div.displayFlexGeneral div#description div.displayFlexSpecific div.element p#poids {
+            margin-bottom: 16px; }
+          .carac div.container div.displayFlexGeneral div#description div.displayFlexSpecific div.element div {
+            width: 80px; }
+            .carac div.container div.displayFlexGeneral div#description div.displayFlexSpecific div.element div p {
+              font-size: 15px;
+              margin-top: 0; }
+    .carac div.container div.displayFlexGeneral div.displayFlexSpecific {
+      display: flex;
+      flex-direction: row; }
+>>>>>>> e227c0f0a1656a7155917b33bf653228bfa70c6f
     .carac div.container div.displayFlexGeneral img.HomePod {
       width: 200px;
       height: auto;
       margin: 30px 20px 0 20px; }
     .carac div.container div.displayFlexGeneral h5 {
       text-align: center; }
+<<<<<<< HEAD
   .carac div.container div.displayFlexGeneral div.title {
     width: 250px;
     margin-top: 20px;
@@ -188,5 +222,104 @@ header {
     padding-left: 40px;
     padding-right: 70px;
     border-left: 0.5px solid #707070; }
+=======
+  .carac div.container div div.displayFlexGeneral {
+    display: flex;
+    flex-direction: row; }
+    .carac div.container div div.displayFlexGeneral div.title {
+      width: 250px;
+      margin-top: 20px;
+      margin-right: 10px;
+      margin-left: 0; }
+      .carac div.container div div.displayFlexGeneral div.title h4 {
+        text-align: right; }
+    .carac div.container div div.displayFlexGeneral div.faqItem {
+      margin: 0;
+      cursor: pointer;
+      width: 700px; }
+      .carac div.container div div.displayFlexGeneral div.faqItem h4 {
+        border-top: 0.5px solid #707070;
+        border-left: 0.5px solid #707070;
+        margin: 0;
+        position: relative;
+        height: 100px;
+        color: #000; }
+      .carac div.container div div.displayFlexGeneral div.faqItem h4.number1 {
+        border-top: none; }
+      .carac div.container div div.displayFlexGeneral div.faqItem h4::after {
+        content: url("../images/arrow.png");
+        position: absolute;
+        top: 40px;
+        right: 50px;
+        font-size: 15px;
+        transition: all linear 0.25s;
+        transform: rotate(0deg); }
+      .carac div.container div div.displayFlexGeneral div.faqItem div.answer {
+        display: none; }
+    .carac div.container div div.displayFlexGeneral div.faqItem.is-open h4 {
+      height: 8px; }
+    .carac div.container div div.displayFlexGeneral div.faqItem.is-open h4::after {
+      transform: rotate(-90deg); }
+    .carac div.container div div.displayFlexGeneral div.faqItem.is-open div.answer {
+      display: block;
+      padding: 20px;
+      padding-left: 40px;
+      padding-right: 80px;
+      border-left: 0.5px solid #707070; }
+      .carac div.container div div.displayFlexGeneral div.faqItem.is-open div.answer a {
+        text-decoration: none;
+        color: #1F93E0; }
+      .carac div.container div div.displayFlexGeneral div.faqItem.is-open div.answer a:hover {
+        text-decoration: underline; }
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  .carac div.container {
+    width: 768px; }
+    .carac div.container div.liseret {
+      width: 768px; }
+    .carac div.container div.displayFlexGeneral div#description {
+      margin: 55px 55px 0 45px; }
+    .carac div.container div.displayFlexGeneral div.displayFlexSpecific img.HomePod {
+      margin: 30px 1px 0 1px; }
+    .carac div.container div div.displayFlexGeneral div.title {
+      width: 200px; }
+    .carac div.container div div.displayFlexGeneral div.faqItem {
+      width: 550px; } }
+@media screen and (max-width: 768px) {
+  .carac div.container {
+    width: 100%; }
+    .carac div.container div.liseret {
+      width: 100%; }
+    .carac div.container div.displayFlexGeneral {
+      flex-direction: column-reverse; }
+      .carac div.container div.displayFlexGeneral div#description {
+        margin: 0 auto;
+        width: 215px; }
+        .carac div.container div.displayFlexGeneral div#description div.displayFlexSpecific {
+          width: 100%; }
+      .carac div.container div.displayFlexGeneral div.displayFlexSpecific {
+        width: 400px;
+        margin: 0 auto; }
+        .carac div.container div.displayFlexGeneral div.displayFlexSpecific img.HomePod {
+          margin: 30px 1px 0 1px; }
+    .carac div.container div div.displayFlexGeneral {
+      flex-direction: column; }
+      .carac div.container div div.displayFlexGeneral div.title {
+        display: none; }
+      .carac div.container div div.displayFlexGeneral div.faqItem {
+        margin: 0;
+        cursor: pointer;
+        width: 100%; }
+        .carac div.container div div.displayFlexGeneral div.faqItem h4 {
+          width: 100%;
+          color: #fff;
+          text-align: left;
+          padding-top: 10px;
+          border-left: none; }
+    .carac div.container div div.faqItem.is-open h4 {
+      height: 100px; }
+    .carac div.container div div.faqItem.is-open div.answer {
+      border-left: none; } }
+>>>>>>> e227c0f0a1656a7155917b33bf653228bfa70c6f
 
 /*# sourceMappingURL=main.css.map */

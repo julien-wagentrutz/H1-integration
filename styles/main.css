@@ -197,7 +197,9 @@ header {
     left: 19%;
     top: 45%; }
     .carac #allerPlusLoin #video div#parent div#titleContainer h3 {
-      font-size: 25px; } }
+      font-size: 25px; }
+    .carac #allerPlusLoin #video div#parent div#titleContainer a {
+      padding: 10px; } }
 @media screen and (max-width: 550px) {
   .carac #allerPlusLoin div.musique #title1 {
     font-size: 10px; }
@@ -206,13 +208,15 @@ header {
   .carac #allerPlusLoin #pres2 .prestext {
     width: 250px !important; }
   .carac #allerPlusLoin #video div#parent div#titleContainer {
-    width: 300px;
+    width: 230px;
     left: 5%;
     top: 35%; }
     .carac #allerPlusLoin #video div#parent div#titleContainer h3 {
-      font-size: 25px; }
+      font-size: 20px; }
     .carac #allerPlusLoin #video div#parent div#titleContainer p {
-      font-size: 9px; } }
+      font-size: 8px; }
+    .carac #allerPlusLoin #video div#parent div#titleContainer a {
+      padding: 5px; } }
 .carac div.container {
   width: 940px;
   margin: 0 auto;
@@ -340,9 +344,10 @@ header {
         .carac div.container div.displayFlexGeneral div#description div.displayFlexSpecific {
           width: 100%; }
       .carac div.container div.displayFlexGeneral div.displayFlexSpecific {
-        width: 400px;
+        width: 315px !important;
         margin: 0 auto; }
         .carac div.container div.displayFlexGeneral div.displayFlexSpecific img.HomePod {
+          width: 150px;
           margin: 30px 1px 0 1px; }
     .carac div.container div div.displayFlexGeneral {
       flex-direction: column; }
@@ -488,7 +493,7 @@ footer {
       flex-wrap: wrap; } }
 @media all and (max-width: 460px) {
   #header .menu ul {
-    display: flex;
+    display: none;
     flex-direction: column;
     /* margin-top: 48px; */
     right: 20px;

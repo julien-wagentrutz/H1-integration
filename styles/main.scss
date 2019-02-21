@@ -34,6 +34,13 @@ ul .container_flex{
   align-items: center;
 }
 
+.hamb{
+  height: 40px;
+  width: 40px;
+  background-color: aliceblue;
+  display: none;
+}
+
 .logo{
   color:#FFF;
   margin-left:10px;
@@ -484,9 +491,24 @@ div{  div.displayFlexGeneral{
 }
 
 @media all and (max-width: 460px)  {
-  #header{
-    .container_flex{
-    }
+  #header .menu ul {
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 48px; */
+    right: 20px;
+    top: 48px;
+    background-color: #111;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  #header li {
+    list-style: none;
+    padding: 15px 5px;
+  }
+  #header .hamb{
+    display: block;
   }
 }
 
@@ -670,4 +692,24 @@ footer{
     }
   }
   }
+}
+
+@media all and (max-width: 460px)  {
+  #header .menu ul {
+    display: flex;
+    flex-direction: column;
+    /* margin-top: 48px; */
+    right: 20px;
+    top: 48px;
+    background-color: #111;
+    position: absolute;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+  }
+  #header li {
+    list-style: none;
+    padding: 15px 5px;
+  }
+
 }

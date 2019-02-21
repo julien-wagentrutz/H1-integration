@@ -346,7 +346,6 @@ header {
         .carac div.container div.displayFlexGeneral div#description div.displayFlexSpecific {
           width: 100%; }
       .carac div.container div.displayFlexGeneral div.displayFlexSpecific {
-        width: 315px !important;
         margin: 0 auto; }
         .carac div.container div.displayFlexGeneral div.displayFlexSpecific img.HomePod {
           width: 150px;
@@ -423,8 +422,9 @@ header {
         .carac div.container div.displayFlexGeneral div#description div.displayFlexSpecific {
           width: 100%; }
       .carac div.container div.displayFlexGeneral div.displayFlexSpecific {
-        width: 400px;
-        margin: 0 auto; }
+        margin: 0 auto;
+        display: flex;
+        justify-content: center; }
         .carac div.container div.displayFlexGeneral div.displayFlexSpecific img.HomePod {
           margin: 30px 1px 0 1px; }
     .carac div.container div div.displayFlexGeneral {

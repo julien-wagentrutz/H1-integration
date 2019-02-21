@@ -553,7 +553,6 @@ div{  div.displayFlexGeneral{
         }
         }
       div.displayFlexSpecific{
-        width: 315px!important;
         margin: 0 auto;
         img.HomePod{
           width: 150px;
@@ -691,8 +690,9 @@ div{  div.displayFlexGeneral{
         }
         }
       div.displayFlexSpecific{
-        width: 400px;
         margin: 0 auto;
+        display: flex;
+        justify-content: center;
         img.HomePod{
           margin: 30px 1px 0 1px;
         }

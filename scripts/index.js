@@ -4,6 +4,7 @@ const figureExp = document.querySelectorAll('.text-techHomePod div')
 const sliders = document.querySelectorAll('.text-siri-content li');
 const figureblock = document.querySelector('.figure');
 const textblock = document.querySelector('.text-techHomePod')
+let pos = 0;
 
 function setPosition(){
     if(document.querySelectorAll('.active').length > 2){

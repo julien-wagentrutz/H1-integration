@@ -24,7 +24,7 @@
       background-repeat: no-repeat;
       -webkit-background-clip: text;
       -webkit-text-fill-color: transparent;
-      font-size: 3.4vw;
+      font-size: 3.3vw;
       font-family: 'sf-pro';
       line-height: 1.48164;
       font-weight: 700;
@@ -39,7 +39,7 @@
   from {
     height: 0; }
   to {
-    height: 60px; } }
+    height: 80px; } }
 @keyframes flashSiri {
   0% {
     opacity: 0.3; }

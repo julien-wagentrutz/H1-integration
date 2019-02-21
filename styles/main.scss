@@ -41,8 +41,12 @@ ul .container_flex{
 .hamb{
   height: 40px;
   width: 40px;
-  background-color: aliceblue;
   display: none;
+  div{
+    border: 1px solid #000;
+    margin: 8px 7px;
+    border-radius: 20px;
+  }
 }
 
 .logo{

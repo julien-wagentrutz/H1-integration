@@ -27,8 +27,11 @@ header #header .container_flex {
 header .hamb {
   height: 40px;
   width: 40px;
-  background-color: aliceblue;
   display: none; }
+  header .hamb div {
+    border: 1px solid #000;
+    margin: 8px 7px;
+    border-radius: 20px; }
 header .logo {
   color: #FFF;
   margin-left: 10px;

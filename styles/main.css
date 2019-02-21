@@ -5,6 +5,8 @@ header .container_flex {
   height: 100%;
   align-items: center;
   justify-content: space-around; }
+header .show {
+  display: block !important; }
 header ul .container_flex {
   justify-content: space-between; }
 header .menu {

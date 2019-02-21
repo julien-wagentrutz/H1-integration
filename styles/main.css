@@ -152,11 +152,19 @@ header {
       .carac div#allerPlusLoin #video div#parent #titleContainer h3, .carac div#allerPlusLoin #video div#parent #titleContainer p {
         text-align: center; }
       .carac div#allerPlusLoin #video div#parent #titleContainer a {
+        top: 15%;
+        color: #fff;
+        bottom: 0px;
+        font-family: 'sf-pro';
+        border: 2px solid #fff;
+        border-radius: 46px;
+        padding: 20px;
         text-decoration: none;
-        color: #1F93E0;
-        top: 15%; }
+        transition: background-color 1s; }
       .carac div#allerPlusLoin #video div#parent #titleContainer a:hover {
-        text-decoration: underline; }
+        background-color: #fff;
+        color: #000;
+        font-weight: 700; }
 
 @media screen and (min-width: 800px) and (max-width: 1024px) {
   .carac #allerPlusLoin div.musique #title1 {
@@ -168,7 +176,7 @@ header {
     width: 750px !important; }
   .carac #allerPlusLoin #video div#parent div#titleContainer {
     left: 22%;
-    top: 65%; }
+    top: 55%; }
     .carac #allerPlusLoin #video div#parent div#titleContainer h3 {
       font-size: 25px; } }
 @media screen and (min-width: 550px) and (max-width: 800px) {
@@ -182,7 +190,7 @@ header {
     width: 450px !important; }
   .carac #allerPlusLoin #video div#parent div#titleContainer {
     left: 19%;
-    top: 60%; }
+    top: 45%; }
     .carac #allerPlusLoin #video div#parent div#titleContainer h3 {
       font-size: 25px; } }
 @media screen and (max-width: 550px) {
@@ -195,9 +203,11 @@ header {
   .carac #allerPlusLoin #video div#parent div#titleContainer {
     width: 300px;
     left: 5%;
-    top: 55%; }
+    top: 35%; }
     .carac #allerPlusLoin #video div#parent div#titleContainer h3 {
-      font-size: 25px; } }
+      font-size: 25px; }
+    .carac #allerPlusLoin #video div#parent div#titleContainer p {
+      font-size: 9px; } }
 .carac div.container {
   width: 940px;
   margin: 0 auto;

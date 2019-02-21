@@ -127,13 +127,13 @@ a.chat {
 .slider {
   position: relative;
   padding-top: 100px;
-  width: 480px;
-  height: 260px;
+  width: 960px;
+  height: 480px;
   overflow: hidden;
   margin: 0 auto; }
 
 .sliderContainer {
-  width: 480px;
+  width: 960px;
   position: absolute;
   display: flex;
   transition: ease-in 0.5s all;
@@ -142,13 +142,13 @@ a.chat {
 
 .sliderContainer img {
   margin: 0px 10px;
-  width: 480px;
+  width: 960px;
   height: 100%; }
 
 .arrowLeft {
   position: absolute;
-  top: 165%;
-  left: 200px;
+  top: 180%;
+  left: 20px;
   background: transparent;
   color: white;
   padding: 5px;
@@ -161,8 +161,8 @@ a.chat {
 
 .arrowRight {
   position: absolute;
-  top: 165%;
-  right: 200px;
+  top: 180%;
+  right: 20px;
   background: transparent;
   color: white;
   padding: 5px;
@@ -190,13 +190,47 @@ a.chat {
     font-size: 15px; }
 
   .Container2 {
+    width: 768px; } }
+@media screen and (min-width: 980px) and (max-width: 1128px) {
+  .slider {
+    width: 768px;
+    display: flex;
+    justify-content: center; }
+
+  .sliderContainer {
     width: 768px; }
 
+  .sliderContainer img {
+    width: 768px;
+    margin: 0px 212px 0px 0px; }
+
   .arrowLeft {
-    left: 75px; }
+    left: 20px;
+    top: 175%; }
 
   .arrowRight {
-    right: 75px; } }
+    right: 20px;
+    top: 175%; } }
+@media screen and (min-width: 768px) and (max-width: 979px) {
+  .slider {
+    width: 600px;
+    display: flex;
+    justify-content: center; }
+
+  .sliderContainer {
+    width: 600px; }
+
+  .sliderContainer img {
+    width: 600px;
+    margin: 0px 380px 0px 0px; }
+
+  .arrowLeft {
+    left: 20px;
+    top: 170%; }
+
+  .arrowRight {
+    right: 20px;
+    top: 170%; } }
 @media screen and (min-width: 480px) and (max-width: 767px) {
   .HPnColor {
     width: 480px;
@@ -227,12 +261,87 @@ a.chat {
   .prix {
     font-size: 70px; }
 
+  .slider {
+    width: 480px;
+    height: 240px;
+    display: flex;
+    justify-content: center; }
+
+  .sliderContainer {
+    width: 480px; }
+
+  .sliderContainer img {
+    width: 480px;
+    margin: 0px 500px 0px 0px; }
+
   .arrowLeft {
-    top: 302%;
+    left: 20px;
+    top: 297%; }
+
+  .arrowRight {
+    right: 20px;
+    top: 297%; } }
+@media screen and (min-width: 300px) and (max-width: 479px) {
+  .HPnColor {
+    width: 300px;
+    flex-direction: column;
+    justify-content: center; }
+
+  div.HPwhite {
+    width: 150px; }
+
+  div.HP {
+    width: 150px; }
+
+  div.HPblack {
+    width: 150px; }
+
+  .input {
+    width: 70%; }
+
+  label {
+    font-size: 15px; }
+
+  .Container2 {
+    width: 300px;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 15px; }
+
+  .prix {
+    margin: 0 auto;
+    font-size: 70px; }
+
+  .AppleCare {
+    padding: 0px; } }
+@media screen and (min-width: 300px) and (max-width: 650px) {
+  .slider {
+    width: 300px;
+    height: 200px;
+    display: flex;
+    justify-content: center; }
+
+  .sliderContainer {
+    width: 300px; }
+
+  .sliderContainer img {
+    width: 300px;
+    margin: 0px 680px 0px 0px; } }
+@media screen and (min-width: 480px) and (max-width: 650px) {
+  .arrowLeft {
+    top: 291%;
     left: 25px; }
 
   .arrowRight {
-    top: 302%;
+    top: 291%;
+    right: 25px; } }
+@media screen and (min-width: 300px) and (max-width: 479px) {
+  .arrowLeft {
+    top: 235%;
+    left: 25px; }
+
+  .arrowRight {
+    top: 235%;
     right: 25px; } }
 
 /*# sourceMappingURL=achat.css.map */

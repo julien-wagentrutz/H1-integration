@@ -4,7 +4,7 @@ const rightButton = document.querySelector('.arrowRight')
 const sliderImages = document.querySelectorAll(".sliderContainer img")
 const sliderContainer = document.querySelector(".sliderContainer")
 let time = 3000
-const step = -500
+const step = -980
 let play
 
 

@@ -298,7 +298,8 @@
     width: 450px; }
 
   #pres5 .text-techHomePod {
-    width: 80vw !important; }
+    width: 80vw !important;
+    min-height: 800px !important; }
   #pres5 .active {
     top: 10px; } }
 @media all and (max-width: 460px) {
@@ -326,7 +327,8 @@
     width: 250px; }
 
   #pres5 .text-techHomePod {
-    width: 100vw !important; }
+    width: 100vw !important;
+    min-height: 800px !important; }
   #pres5 .view-techHomePod {
     width: 100vw !important; }
   #pres5 .active {

@@ -1,20 +1,67 @@
 const figures = document.querySelectorAll('.figure-home');
+const points = document.querySelectorAll('.pagination-figure ul li')
+const figureExp = document.querySelectorAll('.text-techHomePod div')
 const sliders = document.querySelectorAll('.text-siri-content li');
-let i = figures.length-1;
+const figureblock = document.querySelector('.figure')
+const textblock = document.querySelector('.text-techHomePod')
+
+let figure;
+let pos = 0;
 
 
 
-
-const carac = setInterval(function () {
-    if(i == 0){
-        i = figures.length-1
-        for(let j = 0; j<figures.length;j++){
-            figures[j].style.opacity = '0.9'
-        }
+function setPosition(){
+    if(document.querySelectorAll('.active').length > 2){
+        document.querySelector('.figure .active').classList.remove('active')
+        document.querySelector('.pagination-figure .active').classList.remove('active')
+        document.querySelector('.text-techHomePod .active').classList.remove('active')
     }
-    figures[i].style.opacity = '0';
-        i--
+    figures[pos].classList.add('active')
+    points[pos].classList.add('active')
+    figureExp[pos].classList.add('active')
+}
+
+function playFigure() {
+    figure = setInterval(function () {
+        setPosition()
+        if(pos == figures.length-1){
+            pos=0
+        }
+        else{
+            pos++
+        }
     }, 5000)
+
+}
+
+function stopFigure() {
+    clearInterval(figure)
+}
+playFigure()
+
+
+for(let j = 0; j< points.length; j++){
+    points[j].addEventListener(
+        'click',
+        function () {
+            pos = j;
+            setPosition()
+        }
+    )
+}
+
+figureblock.addEventListener(
+    "mouseenter",
+    stopFigure
+)
+
+figureblock.addEventListener(
+    'mouseout',
+    playFigure
+)
+
+
+
 
 let count = 0;
 const slide = setInterval(function () {

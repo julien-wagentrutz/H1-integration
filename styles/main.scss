@@ -1,6 +1,6 @@
 header{
   .container_flex{
-  width: 940px;
+  width: 900px;
   margin: 0 auto;
   display: flex;
   height: 100%;
@@ -18,6 +18,9 @@ ul .container_flex{
   font-weight: 400;
   letter-spacing: -.01em;
   font-family: "SF Pro Text","SF Pro Icons","Helvetica Neue","Helvetica","Arial",sans-serif;
+  ul{
+    display: flex;
+  }
 }
 
 #header{
@@ -109,33 +112,107 @@ header{
   opacity:0.95;
 }
 
-.pres-text {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  width: 800px;
-  margin-bottom: 5%;
-  h2 {
-    text-align: center;
-    font-size: 45px;
-    color: transparent;
-    background-size: 51% 100%;
-    background-position: top left, top right;
-    background-repeat: no-repeat;
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding-bottom: 6px;
-    font-family: 'sf-pro';
-    line-height: 1.48164;
-    font-weight: 700;
-    background-image: linear-gradient(to left, #777dff 0px, #f154ff 200px, #f0357c 400px), linear-gradient(to right, #777dff 0px, #497ce2 200px, #37bdde 400px);
 
-  }
-  p {
-    font-size: 29px;
-    line-height: 39px;
+// PAGE 2 : musique
+.carac{
+  div#allerPlusLoin{
+  .musique{
+    position: relative;
+      img.fond{
+      padding-top: 45px;
+      width: 100%;
+      }
+      img.decoration{
+        position: absolute;
+        width: 400px;
+        height: auto;
+        top: 55%;
+        left: 36%;
+    }
+    #title1{
+      position: absolute;
+      top: 80%;
+      left: 5%;
+      font-size: 30px;
+    }
+    #title2{
+      position: absolute;
+      top: 80%;
+      right: 5%;
+      font-size: 30px;
+    }
+    }
+    #pres2{
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      .pres-text{
+      width: 800px;
+      margin-top: 12%;
+      margin-bottom: 6%;
+      h3 {
+        text-align: center;
+        font-size: 40px;
+        color: transparent;
+        background-size: 51% 100%;
+        background-position: top left, top right;
+        background-repeat: no-repeat;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        padding-bottom: 6px;
+        font-family: 'sf-pro';
+        line-height: 1.48164;
+        font-weight: 700;
+        background-image: linear-gradient(to left, #777dff 0px, #f154ff 200px, #f0357c 400px), linear-gradient(to right, #777dff 0px, #497ce2 200px, #37bdde 400px);
+
+      }
+      p {
+        font-size: 20px;
+        text-align: center;
+        line-height: 3vw;
+      }
+    }
+    }
+    #video{
+      width: 100%;
+      background-color: #fff;
+
+      div{
+        padding-top: 50px;
+        padding-bottom: 50px;
+        width: 900px;
+        height: auto;
+        margin: 0 auto;
+        position: relative;
+      .imgVideo{
+        width: 900px;
+        height:auto;
+      }
+      div{
+        position: absolute;
+      left : 0;
+        top : 60%;
+      h3{
+        font-size: 30px;
+        }
+      h3,p{
+        text-align: center;
+      }
+      a{
+        text-decoration: none;
+        color: #1F93E0;
+        top : 46%;
+      }
+      a:hover{
+        text-decoration: underline;
+      }
+    }
+    }
   }
 }
+}
+
+
 
 //PAGE 2 : CARACTERISTIQUES techniques
 .carac{
@@ -380,4 +457,217 @@ div{  div.displayFlexGeneral{
 }
 }
 }
+}
+
+
+@media all and (min-width: 800px) {
+  #header{
+    .container_flex{
+      width: 900px;
+    }
+  }
+}
+@media all and (max-width: 800px) and (min-width: 760px) {
+  #header{
+    .container_flex{
+      width: 650px;
+    }
+  }
+}
+
+@media all and (max-width: 750px) and (min-width: 460px) {
+  #header{
+    .container_flex{
+      width: 450px;
+    }
+  }
+}
+
+@media all and (max-width: 460px)  {
+  #header{
+    .container_flex{
+    }
+  }
+}
+
+// Responsive Page2 : Caractéristiques techniques
+
+@media screen and (min-width:768px) and (max-width:1024px)
+{ .carac{
+  div.container{
+    width:768px;
+  div.liseret{
+    width: 768px;
+    }
+    div.displayFlexGeneral{
+      div#description{
+        margin: 55px 55px 0 45px;}
+      div.displayFlexSpecific{
+        img.HomePod{
+          margin: 30px 1px 0 1px;
+        }
+      }
+    }
+
+div{  div.displayFlexGeneral{
+      div.title{
+        width: 200px;
+      }
+      div.faqItem{
+        width: 550px;
+  }
+}
+}
+}
+}
+}
+
+@media screen and (max-width:768px)
+{
+  .carac{
+  div.container{
+    width:100%;
+
+  div.liseret{
+    width: 100%;
+    }
+  div.displayFlexGeneral{
+      flex-direction: column-reverse;
+      div#description{
+        margin: 0 auto;
+        width: 215px;
+        div.displayFlexSpecific{
+         width: 100%;
+        }
+        }
+      div.displayFlexSpecific{
+        width: 400px;
+        margin: 0 auto;
+        img.HomePod{
+          margin: 30px 1px 0 1px;
+        }
+      }
+    }
+  div{
+    div.displayFlexGeneral{
+    flex-direction: column;
+      div.title{
+        display: none;
+        }
+        div.faqItem{
+          margin: 0;
+          cursor: pointer;
+          width: 100%;
+          h4{
+            width: 100%;
+            color:#E7E7E7;
+            text-align: left;
+            padding-top: 10px;
+            border-left: none;
+          }
+    }
+    }
+  div.faqItem.is-open{
+    h4{
+      height: 100px;
+      //background-color: #191919;
+    }
+    div.answer{
+      border-left: none;
+}
+}
+}
+}
+}
+}
+
+
+//footer
+
+footer{
+   background-color: #111;
+
+  .container{
+    width: 1100px;
+    margin: 0 auto;
+
+  ul{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 0;
+  li{
+    margin: 10px;
+
+    h6,p,{
+      color: #CBCBCB;
+      text-align: center;
+      width: 200px;
+    }
+    p{
+      font-size: 10px;
+    }
+    a{
+      font-size: 10px;
+      color: #1F93E0;
+    }
+    a:hover{
+      text-decoration: none;
+    }
+  }
+
+  }
+  p{
+    font-size: 10px;
+    color: #707070;
+  }
+  .lastItems{
+    a{
+      color : #707070;
+    }
+    a:hover{
+      text-decoration: none;
+    }
+  }
+}
+}
+
+//RESPONSIVE FOOTER
+@media screen and (min-width:800px) and (max-width:1024px)
+{
+  footer{
+
+    .container{
+      width: 800px;
+
+    ul.firstItems{
+      display: flex;
+      flex-wrap: wrap;
+      li{
+        h6,p{
+          width: 300px
+        }
+      }
+    }
+  }
+  }
+}
+
+@media screen and (max-width:800px)
+{
+  footer{
+
+    .container{
+      width: 70%;
+
+    ul.firstItems{
+      display: flex;
+      flex-wrap: wrap;
+    }
+    ul.lastItems{
+      display: flex;
+      flex-wrap: wrap;
+    }
+  }
+  }
 }

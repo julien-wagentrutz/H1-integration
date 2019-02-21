@@ -6,28 +6,29 @@
     <meta name="description" content="description de ma page"/>
     <link href="https://fonts.googleapis.com/css?family=SFProText" rel="stylesheet">
     <link rel="stylesheet" href="styles/achat.css">
+    <link rel="stylesheet" href="styles/main.css">
   </head>
   <body>
-    <header id="header">
-        <div class="container_flex">
-            <div class="logo">
+  <header id="header">
+      <div class="container_flex">
+          <div class="logo">
               <a href="index.html" title="logo" class="logo">HomePod</a>
-            </div>
-            <div class=menu>
+          </div>
+          <div class=menu>
               <nav>
-                <ul class="container_flex">
-                  <li><a href="#" title="Item" class="current">Présentation</a></li>
-                  <li><a href="page2.html" title="Item">Caractéristiques techniques</a></li>
-                  <li><a href="#" title="Item" class="button">Acheter</a></li>
-                </ul>
+                  <ul>
+                      <li><a href="index.html" title="Présentation" class="current">Présentation</a></li>
+                      <li><a href="page2.html" title="Pour aller plus loin">Pour aller plus loin</a></li>
+                      <li><a href="achat.html" title="Acheter" class="button">Acheter</a></li>
+                  </ul>
               </nav>
-            </div>
-        </div>
-    </header>
-    <main>   
+          </div>
+      </div>
+  </header>
+    <main>
       <form action="achat.html">
       <div class="HPnColor">
-        <div class="HPwhite">    
+        <div class="HPwhite">
          <div class="HP">
            <img class="HPblanc" src="images/HomePod-blanc.png" alt="HomePod blanc">
           </div>
@@ -35,7 +36,7 @@
             <input id="Blanc" type="radio" name="Couleur" value="Blanc">
             <label for="Blanc">Blanc</label>
           </div>
-        </div>      
+        </div>
         <div class="HPblack">
           <div class="HP">
            <img class="HPnoir" src="images/HomePod-noir.jpg.png" alt="HomePod gris sidéral">
@@ -44,13 +45,13 @@
             <input id="Gris-sidéral" type="radio" name="Couleur" value="Gris-sidéral">
             <label for="Gris-sidéral">Gris sidéral</label>
           </div>
-        </div> 
+        </div>
       </div>
       </form>
       <div class="Container2">
         <div class="prix">
           <span>349,00€</span>
-        </div> 
+        </div>
         <div class="AppleCare">
           <h2>Ajoutez l’AppleCare+</h2>
           <h3>AppleCare+ pour HomePod</h3>
@@ -78,7 +79,7 @@
               <button class="buttonStd2" type="submit" name="Plus d’options de livraison" value="Plus d’options de livraison" title="Plus d’options de livraison">
                 <span>Plus d’options de livraison</span>
               </button>
-            </div>   
+            </div>
           </div>
           <p>
             iPhone 5s (ou ultérieur), iPad Pro, iPad (5e génération ou ultérieure), iPad Air (ou ultérieur), iPad mini 2 (ou ultérieur) ou iPod touch (6e génération) sous iOS 12 (ou version ultérieure) requis.
@@ -86,7 +87,7 @@
          <p>
             Faites-vous aider pour l’achat. <a class="chat" href="https://contactretail.apple.com/Help">Chattez dès maintenant</a> ou appelez le 0800 046 046.
          </p>
-        </div>  
+        </div>
       </div>
         <div class="slider">
           <div class="sliderContainer" style="left:0;">
@@ -104,8 +105,35 @@
         </div>
     </main>
     <footer>
-
+      <div class="container">
+      <ul class="firstItems">
+          <li>
+            <h6>Livraison gratuite</h6>
+            <p>Et retours gratuits. Validez votre commande pour connaitre les dates de livraison.<a href="https://www.apple.com/fr/shop/shipping-pickup" target="_blank"> En savoir plus ></a></p>
+          </li>
+          <li>
+            <h6>Retrait en Apple Store</h6>
+            <p>Achetez en ligne et récupérez les articles disponibles en magasin.<a href="https://www.apple.com/fr/shop/shipping-pickup" target="_blank"> En savoir plus ></a></p>
+          </li>
+          <li>
+            <h6>Financement</h6>
+            <p>Options de paiement mensuel disponibles.<a href="https://www.apple.com/fr/shop/browse/finance/loan" target="_blank"> En savoir plus ></a></p>
+          </li>
+          <li>
+            <h6>Faites-vous aider pour l'achat</h6>
+            <p>Une question? Appelez un Spécialiste ou chattez en ligne. Appelez le 0800 046.<a href="https://contactretail.apple.com/Help?pg=COM%3Ahomepod&ap=COM&c=fr&l=fr" target="_blank"> Nous contacter</a></p>
+          </li>
+        </ul>
+        <p>Copyright © 2019 Apple Inc. Tous droits réservés.</p>
+        <ul class="lastItems">
+          <li><a href="https://www.apple.com/legal/privacy/fr-ww/" target="_blank">Engagement de Confidentialité</a></li>
+          <li><a href="https://www.apple.com/legal/privacy/fr-ww/cookies/" target="_blank">Utilisation des cookies</a></li>
+          <li><a href="https://www.apple.com/fr/legal/internet-services/terms/site.html" target="_blank">Conditions d'utilisatio</a></li>
+          <li><a href="https://www.apple.com/fr/shop/browse/open/salespolicies" target="_blank">Ventes et renboursements</a></li>
+          <li><a href="https://www.apple.com/fr/legal/" target="_blank">Mentions légales</a></li>
+        </ul>
+      </div>
     </footer>
     <script src="scripts/achat.js"></script>
   </body>
-</html>  
+</html>

@@ -9,13 +9,11 @@
     text-align: center;
     p{
       text-align: left;
-      font-size: 3em;
+      font-size: 2.5vw;
       font-weight: 700;
       line-height: 1.2em;
     }
     .line {
-       position: relative;
-       top: 50%;
        margin: 0 auto;
        font-size: 180%;
        text-align: center;
@@ -27,8 +25,7 @@
         background-repeat: no-repeat;
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
-        padding-bottom: 6px;
-        font-size: 45px;
+        font-size: 3.5vw;
         font-family: 'sf-pro';
         line-height: 1.48164;
         font-weight: 700;
@@ -38,7 +35,7 @@
       animation: typewriter 1500ms steps(80) 0s 1 normal both;
     }
     #presVideo{
-      padding-top: 20px;
+      padding-top: 40px;
       height: calc(100vh - 70px);
     }
   }
@@ -76,13 +73,16 @@
   margin-top: 10%;
   div{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     .img-siri{
       position: relative;
       background-image: url('../media/homepod_top_medium_2x copie.jpg');
       margin-top: 50px;
       height: 70vh;
-      background-size: 65vh;
+      background-size: 60vh;
       width: 50vw;
+      min-width: 375px;
       background-position: center;
       background-repeat: no-repeat;
       .img-siri-active{
@@ -99,20 +99,20 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      flex-direction: column;
       height: 70vh;
-      width: 50vw;
+      width: 47vw;
       margin-top: 50px;
       position: relative;
+      min-width: 375px;
       a{
         color: #fff;
-        position: absolute;
         bottom: 50px;
         font-family: 'sf-pro';
         border: 2px solid #fff;
         border-radius:46px;
         padding: 20px;
         text-decoration: none;
+        transition: background-color 1s;
       }
       a:hover{
         background-color: #fff;
@@ -187,65 +187,263 @@
   align-items: center;
   flex-direction: column;
   margin-top: 10%;
+  margin-bottom: 5%;
   div{
     display: flex;
     flex-direction: column;
     align-items: center;
     #demoVideo{
-      height: 70vh;
       width: 80vw;
+      border-radius:20px;
     }
   }
 }
 
 #pres5{
-  position: relative;
   background-color: #fff;
-  height: 100vh;
-  .text-techHomePod{
-    left: 0;
+  .active{
+    opacity: 0.9!important;
   }
-  .view-techHomePod{
-    right: 0;
-    #home1{
-      background-image: url("../media/homePod/guts_1_medium_2x.jpg");
-      opacity: 0.9;
-    }
-    #home2{
-      background-image: url("../media/homePod/guts_2_medium_2x.jpg");
-      opacity: 0.9;
-    }
-    #home3{
-      background-image: url("../media/homePod/guts_3_medium_2x.jpg");
-      opacity: 0.9;
-    }
-    #home4{
-      background-image: url("../media/homePod/guts_4_medium_2x.jpg");
-      opacity: 0.9;
-    }
-    #home5{
-      background-image: url("../media/homePod/homepod_side_medium_2x.jpg");
-      opacity: 0.9;
-    }
-  }
-  div{
-    position: absolute;
+  .container-HomePod{
     display: flex;
-    justify-content: center;
-    width: 50vw;
-    height: 100vh;
-    .figure-home{
-      position: absolute;
-      margin: 0;
-      width: 90%;
-      height: 100%;
-      right: 0px;
-      background-size: 84%;
-      background-repeat: no-repeat;
-      background-position: center;
-      transition: opacity 2s;
+    flex-wrap: wrap;
+    justify-content:center;
+    .text-techHomePod{
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      width: 50%;
+      min-width: 300px;
+      div{
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 60%;
+        text-align: center;
+        padding: 25px;
+        opacity: 0;
+        transition: opacity 1s;
+        background: #000;
+        border-radius: 20px;
+        p{
+          line-height: 22px;
+        }
+      }
+    }
+    .view-techHomePod{
+      height: 100vh;
+      width: 50%;
+      position: relative;
+      min-width: 300px;
+      .figure{
+        height: 90%;
+        .figure-home{
+          position: absolute;
+          height: 95%;
+          width: 100%;
+          background-size: 75%;
+          background-repeat: no-repeat;
+          background-position:center;
+          margin: 0;
+          opacity: 0;
+          transition: opacity 2s;
+        }
+        #home1{
+          background-image: url("../media/homePod/guts_1_medium_2x.jpg");
+        }
+        #home2{
+          background-image: url("../media/homePod/guts_2_medium_2x.jpg");
+        }
+        #home3{
+          background-image: url("../media/homePod/guts_3_medium_2x.jpg");
+        }
+        #home4{
+          background-image: url("../media/homePod/guts_4_medium_2x.jpg");
+        }
+        #home5{
+          background-image: url("../media/homePod/homepod_side_medium_2x.jpg");
+        }
+      }
+      .pagination-figure{
+        display: flex;
+        justify-content: center;
+        height: 10%;
+        ul{
+          list-style: none;
+          display: flex;
+          width: 50%;
+          justify-content: space-around;
+          padding: 0;
+          .point{
+            height: 15px;
+            width: 15px;
+            background-color: #000;
+            opacity: 0.5;
+            border-radius:50%;
+            cursor: pointer;
+          }
+        }
+      }
     }
   }
 }
 
 
+.pres-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 800px;
+  margin-bottom: 5%;
+  h2 {
+    text-align: center;
+    font-size: 3vw;
+    color: transparent;
+    background-size: 51% 100%;
+    background-position: top left, top right;
+    background-repeat: no-repeat;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    padding-bottom: 6px;
+    font-family: 'sf-pro';
+    line-height: 1.48164;
+    font-weight: 700;
+    background-image: linear-gradient(to left, #777dff 0px, #f154ff 200px, #f0357c 400px), linear-gradient(to right, #777dff 0px, #497ce2 200px, #37bdde 400px);
+
+  }
+  p {
+    font-size: 2.5vw;
+    line-height: 3vw;
+  }
+}
+@media all and (max-width: 900px) and (min-width: 760px) {
+    #pres1{
+      div{
+        width:750px;
+      }
+    }
+  #pres2{
+    .pres-text{
+      width:750px;
+    }
+    .img-siri{
+      background-size: 50vw!important;
+
+    }
+  }
+  #pres3{
+     div{
+       width:750px;
+     }
+  }
+  #pres4{
+    div{
+      width:750px;
+    }
+  }
+  #pres5{
+    div{
+      width:750px;
+    }
+  }
+}
+
+@media all and (max-width: 750px) and (min-width: 460px) {
+  #pres1{
+    div{
+      width:450px;
+      #presVideo{
+        height: calc(80vh - 70px);;
+      }
+    }
+  }
+  #pres2{
+    .pres-text{
+      width:450px;
+    }
+    .img-siri{
+      width: 80vw!important;
+      background-size: 50vh!important;
+    }
+    .text-siri{
+      width: 80vw!important;
+      height: 40vh!important;
+      min-width: 10px!important;
+    }
+  }
+  #pres3{
+    div{
+      width:450px;
+    }
+  }
+  #pres4{
+    div{
+      width:450px;
+    }
+  }
+  #pres5{
+    .text-techHomePod{
+      width: 80vw!important;
+      min-height: 800px!important;
+    }
+    .active{
+      top: 10px;
+    }
+  }
+}
+
+@media all and (max-width: 460px)  {
+  #pres1{
+    div{
+      width:250px;
+      #presVideo{
+        height: calc(50vh - 70px);;
+      }
+    }
+  }
+  #pres2{
+    .pres-text {
+      width: 250px;
+    }
+    .img-siri{
+      width: 80vw!important;
+      background-size: 35vh!important;
+
+    }
+    .text-siri{
+      width: 80vw!important;
+      height: 40vh!important;
+      min-width: 10px!important;
+
+      p{
+        font-size: 8vw!important;
+      }
+    }
+
+  }
+  #pres3{
+    div{
+      width:250px;
+    }
+  }
+  #pres4{
+    div{
+      width:250px;
+    }
+  }
+  #pres5{
+    .text-techHomePod{
+      width:100vw!important;
+      min-height: 800px!important;
+    }
+    .view-techHomePod{
+      width:100vw!important;
+    }
+    .active{
+      top: 10px;
+    }
+  }
+}
